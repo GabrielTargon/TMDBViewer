@@ -30,8 +30,8 @@ enum Detail {
             var rate: String
             var date: String
             var description: String
-            var genres: [MovieGenre]?
-            var cast: MovieCreditResponse?
+            var genres: String
+            var cast: String
         }
     }
 }

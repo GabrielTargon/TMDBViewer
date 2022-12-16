@@ -177,36 +177,6 @@ final class DetailView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Private functions
-    
-    private func formatGenresWith(genre: [MovieGenre]?) -> String {
-        guard let genre = genre else {
-            return "-"
-        }
-        
-        var genreString = String()
-        
-        for gen in genre {
-            genreString.append(gen.name + " / ")
-        }
-        
-        return genreString
-    }
-    
-    private func formatCastWith(credits: MovieCreditResponse?) -> String {
-        guard let credit = credits else {
-            return "-"
-        }
-        
-        var castString = String()
-        
-        for actor in credit.cast {
-            castString.append(actor.name + " as " + actor.character + "\n")
-        }
-        
-        return castString
-    }
-    
     // MARK: Public functions
     
     func setView(viewModel: Detail.Film.ViewModel) {
@@ -216,8 +186,8 @@ final class DetailView: UIView {
         rateLabel.text = viewModel.rate
         movieDescription.text = viewModel.description
         movieRelease.text = viewModel.date
-        movieGenres.text = formatGenresWith(genre: viewModel.genres)
-        castLabel.text = formatCastWith(credits: viewModel.cast)
+        movieGenres.text = viewModel.genres
+        castLabel.text = viewModel.cast
         loadingIndicator.stopAnimating()
     }
 }
