@@ -7,60 +7,57 @@ import UIKit
 import SwiftUI
 
 protocol LoginDisplayLogic: AnyObject {
-    func didSelectLogin(_ sender: LoginViewModel?)
+    func didSelectLogin(user: Login.User.Request)
     func displayHome()
     func displayError(description: String)
 }
 
-class LoginViewController: UIHostingController<LoginView>, LoginDisplayLogic {
+class LoginViewController: UIViewController, LoginDisplayLogic {
 
     var interactor: LoginBusinessLogic?
     var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
-    var viewModel: LoginViewModel?
+    
+    let loginView = LoginView()
     
     // MARK: Object lifecycle
     
-    override init(rootView: LoginView) {
-        super.init(rootView: rootView)
-        setup(with: rootView.viewModel)
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setup()
     }
     
-    @MainActor required dynamic init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
     }
     
     // MARK: Setup
     
-    private func setup(with viewModel: LoginViewModel) {
+    private func setup() {
         let viewController = self
         let interactor = LoginInteractor()
         let presenter = LoginPresenter()
         let router = LoginRouter()
-        var viewModel = viewModel
         viewController.interactor = interactor
         viewController.router = router
-        viewController.viewModel = viewModel
         interactor.presenter = presenter
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
-        viewModel.delegate = viewController
     }
     
     // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view = loginView
+        loginView.viewController = self
     }
     
     // MARK: Public functions
     
-    func didSelectLogin(_ sender: LoginViewModel?) {
-        guard let sender = sender else {
-            return
-        }
-        interactor?.requestLogin(with: Login.User.Request(username: sender.username,
-                                                          password: sender.password))
+    func didSelectLogin(user: Login.User.Request) {
+        interactor?.requestLogin(with: user)
     }
     
     func displayHome() {

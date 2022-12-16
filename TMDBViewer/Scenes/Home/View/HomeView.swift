@@ -16,7 +16,8 @@ final class HomeView: UIView {
         let collection = UICollectionView(frame: .zero,
                                           collectionViewLayout: layout)
         collection.translatesAutoresizingMaskIntoConstraints = false
-        collection.register(HomeMovieCell.self, forCellWithReuseIdentifier: cellIdentifier)
+        collection.register(HomeMovieCell.self,
+                            forCellWithReuseIdentifier: cellIdentifier)
         collection.backgroundColor = .clear
         return collection
     }()
@@ -27,7 +28,8 @@ final class HomeView: UIView {
         loading.hidesWhenStopped = true
         loading.style = .large
         loading.color = .white
-        loading.backgroundColor = UIColor(white: 0, alpha: 0.7)
+        loading.backgroundColor = UIColor(white: 0,
+                                          alpha: 0.7)
         loading.startAnimating()
         return loading
     }()

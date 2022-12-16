@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TMDBViewer
+
+  Created by Gabriel Targon on 16/12/22.
+  
+*/
+
+"login_username" = "Username";
+"login_password" = "Password";
+"login_button" = "Log in";

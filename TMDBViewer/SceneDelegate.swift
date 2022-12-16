@@ -22,9 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         let navigationController = UINavigationController()
         
-        let sceneFactory = DefaultSceneFactory()
-        let mainView = sceneFactory.makeLoginScene()
-//        let mainView = HomeViewController(nibName: nil, bundle: nil)
+        let mainView = LoginViewController()
         
         navigationController.viewControllers = [mainView]
         window.rootViewController = navigationController

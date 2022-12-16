@@ -181,7 +181,7 @@ final class DetailView: UIView {
     
     func setView(viewModel: Detail.Film.ViewModel) {
         movieImage.kf.setImage(with: viewModel.backdropImageURL,
-                               placeholder: CommonImage.placeholder.raw)
+                               placeholder: CommonImages.placeholder.raw)
         movieTitle.text = viewModel.title
         rateLabel.text = viewModel.rate
         movieDescription.text = viewModel.description

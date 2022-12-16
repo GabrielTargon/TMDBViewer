@@ -72,7 +72,7 @@ class HomeMovieCell: UICollectionViewCell {
     
     func setCellValues(movie: Home.Movie) {
         movieImage.kf.setImage(with: movie.image,
-                               placeholder: CommonImage.placeholder.raw)
+                               placeholder: CommonImages.placeholder.raw)
         movieTitle.text = movie.title
         movieDate.text = movie.date
         movieRating.text = movie.rating
