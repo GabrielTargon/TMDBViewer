@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class DetailView: UIView {
     
@@ -209,7 +210,8 @@ final class DetailView: UIView {
     // MARK: Public functions
     
     func setView(viewModel: Detail.Film.ViewModel) {
-        movieImage.load(url: viewModel.backdropImageURL)
+        movieImage.kf.setImage(with: viewModel.backdropImageURL,
+                               placeholder: CommonImage.placeholder.raw)
         movieTitle.text = viewModel.title
         rateLabel.text = viewModel.rate
         movieDescription.text = viewModel.description

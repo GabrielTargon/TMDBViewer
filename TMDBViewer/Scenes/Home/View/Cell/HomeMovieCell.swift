@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeMovieCell: UICollectionViewCell {
     
@@ -70,7 +71,8 @@ class HomeMovieCell: UICollectionViewCell {
     // MARK: Public functions
     
     func setCellValues(movie: Home.Movie) {
-        movieImage.load(url: movie.image)
+        movieImage.kf.setImage(with: movie.image,
+                               placeholder: CommonImage.placeholder.raw)
         movieTitle.text = movie.title
         movieDate.text = movie.date
         movieRating.text = movie.rating

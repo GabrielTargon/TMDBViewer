@@ -10,7 +10,7 @@ import Foundation
 protocol NetworkWrapperConsumerProtocol: AnyObject {}
 
 class NetworkConsumer: NetworkWrapperConsumerProtocol {
-    let apiKey = "xxxxxxx"
+    let apiKey = "7ec5638ba838a2ed945cafbe9144be16"
     let baseAPIURL = "https://api.themoviedb.org/3"
     let urlSession = URLSession.shared
     
