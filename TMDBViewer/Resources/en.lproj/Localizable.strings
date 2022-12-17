@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  TMDBViewer
+
+  Created by Gabriel Targon on 16/12/22.
+  
+*/
+
+"login_username" = "Username";
+"login_password" = "Password";
+"login_button" = "Log in";
+
+"home_title" = "Movies";
+"home_error_title" = "Something went wrong";
+"home_error_button" = "Close";
+
+"detail_summary" = "Summary";
+"detail_release" = "Release";
+"detail_genres" = "Genres";
+"detail_cast" = "Cast";

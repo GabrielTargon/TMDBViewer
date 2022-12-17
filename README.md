@@ -15,10 +15,11 @@ After getting a API you must change it on `Services/NetworkConsumer.swift`
 
 ## Tech info
 
-- Clean swift
+- Clean swift architecture
 - UIKit (ViewCode)
 - SwiftUI (Widget)
 - TMBD API
+- Localizable (English and Portuguese)
 
 ## External packages (SPM)
 - Kingfisher

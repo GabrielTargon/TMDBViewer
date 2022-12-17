@@ -138,7 +138,7 @@ extension HomeViewController: ViewCode {
     }
     
     func setupConfigurations() {
-        navigationItem.title = "TV Shows"
+        navigationItem.title = HomeStrings.title.localized
         
         // Delegates
         homeView.collectionView.delegate = self

@@ -37,11 +37,11 @@ class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing {
     
     func routeToError(description: String) {
         DispatchQueue.main.async {
-            let alert = UIAlertController(title: "Something went wrong",
+            let alert = UIAlertController(title: HomeStrings.errorTitle.localized,
                                           message: description,
                                           preferredStyle: .alert)
             
-            alert.addAction(UIAlertAction(title: "Close",
+            alert.addAction(UIAlertAction(title: HomeStrings.errorButton.localized,
                                           style: .default,
                                           handler: nil))
             

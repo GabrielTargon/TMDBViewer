@@ -62,7 +62,7 @@ final class DetailView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = .tmdbAlgaeGreen
-        label.text = "Summary"
+        label.text = DetailStrings.summary.localized
         return label
     }()
     
@@ -88,7 +88,7 @@ final class DetailView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = .tmdbAlgaeGreen
-        label.text = "Release"
+        label.text = DetailStrings.release.localized
         return label
     }()
     
@@ -105,7 +105,7 @@ final class DetailView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = .tmdbAlgaeGreen
-        label.text = "Genres"
+        label.text = DetailStrings.genres.localized
         return label
     }()
     
@@ -123,7 +123,7 @@ final class DetailView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = .tmdbAlgaeGreen
-        label.text = "Cast"
+        label.text = DetailStrings.cast.localized
         return label
     }()
     
