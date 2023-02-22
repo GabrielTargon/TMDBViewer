@@ -14,6 +14,7 @@ import UIKit
 
 protocol LoginBusinessLogic {
     func requestLogin(with credentials: Login.User.Request)
+    func requestFastLogin()
 }
 
 protocol LoginDataStore {}
@@ -25,7 +26,6 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
     // MARK: Functions
     
     func requestLogin(with credentials: Login.User.Request) {
-        
         worker?.fetchLogin(with: credentials,
                            result: { result in
             switch result {
@@ -39,5 +39,9 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
                 }
             }
         })
+    }
+    
+    func requestFastLogin() {
+        self.presenter?.presentHome()
     }
 }

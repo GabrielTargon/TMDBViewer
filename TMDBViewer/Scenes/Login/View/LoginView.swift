@@ -52,10 +52,24 @@ final class LoginView: UIView {
         return button
     }()
     
+    private lazy var fastLoginButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle(LoginTexts.fastLoginButton.localized, for: .normal)
+        button.setTitleColor(.gray, for: .disabled)
+        button.backgroundColor = .tmdbSlateGrey
+        button.layer.cornerRadius = 10
+        button.addTarget(self,
+                         action: #selector(fastLoginAction),
+                         for: .touchUpInside)
+        return button
+    }()
+    
     private lazy var vStack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [usernameTextField,
                                                    passwordTextField,
-                                                   loginButton])
+                                                   loginButton,
+                                                   fastLoginButton])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.distribution = .equalSpacing
         stack.alignment = .center
@@ -82,6 +96,9 @@ final class LoginView: UIView {
         viewController?.didSelectLogin(user: user)
     }
     
+    @objc func fastLoginAction() {
+        viewController?.didSelectFastLogin()
+    }
 }
 
 extension LoginView: UITextFieldDelegate {
@@ -135,6 +152,12 @@ extension LoginView: ViewCode {
             loginButton.heightAnchor.constraint(equalToConstant: 40),
             loginButton.leadingAnchor.constraint(equalTo: vStack.leadingAnchor),
             loginButton.trailingAnchor.constraint(equalTo: vStack.trailingAnchor),
+        ])
+        
+        NSLayoutConstraint.activate([
+            fastLoginButton.heightAnchor.constraint(equalToConstant: 40),
+            fastLoginButton.leadingAnchor.constraint(equalTo: vStack.leadingAnchor),
+            fastLoginButton.trailingAnchor.constraint(equalTo: vStack.trailingAnchor),
         ])
         
         NSLayoutConstraint.activate([

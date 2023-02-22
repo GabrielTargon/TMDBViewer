@@ -8,6 +8,7 @@ import SwiftUI
 
 protocol LoginDisplayLogic: AnyObject {
     func didSelectLogin(user: Login.User.Request)
+    func didSelectFastLogin()
     func displayHome()
     func displayError(description: String)
 }
@@ -58,6 +59,10 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     
     func didSelectLogin(user: Login.User.Request) {
         interactor?.requestLogin(with: user)
+    }
+    
+    func didSelectFastLogin() {
+        interactor?.requestFastLogin()
     }
     
     func displayHome() {

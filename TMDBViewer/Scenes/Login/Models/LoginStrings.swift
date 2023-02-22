@@ -11,4 +11,5 @@ enum LoginTexts: String, LocalizationProtocol {
     case usernameField = "login_username"
     case passwordField = "login_password"
     case loginButton = "login_button"
+    case fastLoginButton = "login_fast_button"
 }

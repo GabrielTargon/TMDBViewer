@@ -140,8 +140,7 @@ extension HomeMovieCell: ViewCode {
             movieDescription.trailingAnchor.constraint(equalTo: trailingAnchor,
                                                        constant: -8),
             movieDescription.bottomAnchor.constraint(equalTo: bottomAnchor,
-                                                     constant: -8),
-            movieDescription.heightAnchor.constraint(equalToConstant: 56)
+                                                     constant: -8)
         ])
     }
     

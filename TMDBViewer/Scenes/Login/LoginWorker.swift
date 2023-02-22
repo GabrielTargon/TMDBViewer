@@ -58,7 +58,6 @@ class LoginWorker: NetworkConsumer {
         } errorHandler: { error in
             result(.failure(MovieError.invalidResponse))
         }
-        
     }
     
     func getRequestToken(successHandler: @escaping (_ response: Login.TokenRequest) -> Void,

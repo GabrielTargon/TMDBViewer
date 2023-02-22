@@ -124,7 +124,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.size.width * 0.46
         
-        return CGSize(width: width, height: 300)
+        return CGSize(width: width, height: 350)
     }
 }
 
