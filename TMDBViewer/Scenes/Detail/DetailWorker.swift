@@ -12,34 +12,18 @@
 
 import Foundation
 
-class DetailWorker: NetworkConsumer {
+class DetailWorker {
     
     func fetchMovie(id: Int,
-                    result: @escaping (Result<Movie, Error>) -> Void) {
-        guard let url = URL(string: "\(baseAPIURL)/movie/\(id)?api_key=\(apiKey)&append_to_response=videos,credits") else {
-            result(.failure(MovieError.invalidEndpoint))
-            return
-        }
+                    result: @escaping (Result<Movie, NetworkError>) -> Void) {
         
-        urlSession.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                result(.failure(MovieError.apiError))
-                return
+        NetworkService.makeRequest(TMDBEndpoint.movie(id)) { (response: Result<Movie, NetworkError>) in
+            switch response {
+            case .success(let data):
+                result(.success(data))
+            case.failure(let error):
+                result(.failure(error))
             }
-            
-            guard let data = data else {
-                result(.failure(MovieError.noData))
-                return
-            }
-            
-            do {
-                let movie = try self.jsonDecoder.decode(Movie.self, from: data)
-                DispatchQueue.main.async {
-                    result(.success(movie))
-                }
-            } catch {
-                result(.failure(MovieError.serializationError))
-            }
-        }.resume()
+        }
     }
 }

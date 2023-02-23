@@ -12,83 +12,39 @@
 
 import Foundation
 
-class LoginWorker: NetworkConsumer {
+class LoginWorker {
     
     func fetchLogin(with credentials: Login.User.Request,
-                    result: @escaping (Result<Bool, MovieError>) -> Void) {
-        let session = Login.SessionRequest(username: credentials.username,
-                                           password: credentials.password)
-        
+                    result: @escaping (Result<Bool, NetworkError>) -> Void) {
         getRequestToken { response in
-            var urlComponente = URLComponents(string: "\(self.baseAPIURL)/authentication/token/validate_with_login")
-            
-            let queryItems = [URLQueryItem(name: "api_key", value: self.apiKey),
-                              URLQueryItem(name: "username", value: session.username),
-                              URLQueryItem(name: "password", value: session.password),
-                              URLQueryItem(name: "request_token", value: response.requestToken)]
-            
-            urlComponente?.queryItems = queryItems
-            
-            guard let url = urlComponente?.url else {
-                result(.failure(MovieError.invalidEndpoint))
-                return
-            }
-            
-            self.urlSession.dataTask(with: url) { (data, response, error) in
-                if error != nil {
-                    result(.failure(MovieError.apiError))
-                    return
-                }
-                
-                guard let data = data else {
-                    result(.failure(MovieError.noData))
-                    return
-                }
-                
-                do {
-                    let sessionResponse = try self.jsonDecoder.decode(Login.SessionResponse.self,
-                                                                      from: data)
-                    DispatchQueue.main.async {
-                        result(.success(sessionResponse.success))
+            switch response {
+            case .success(let data):
+                let params = TMDBEndpoint.login(credentials.username,
+                                                credentials.password,
+                                                data.requestToken)
+
+                NetworkService.makeRequest(params) { (response: Result<Login.SessionResponse, NetworkError>) in
+                    switch response {
+                    case .success(let data):
+                        result(.success(data.success))
+                    case.failure(let error):
+                        result(.failure(error))
                     }
-                } catch {
-                    result(.failure(MovieError.serializationError))
                 }
-            }.resume()
-        } errorHandler: { error in
-            result(.failure(MovieError.invalidResponse))
+            case.failure:
+                result(.failure(.decodeError))
+            }
         }
     }
     
-    func getRequestToken(successHandler: @escaping (_ response: Login.TokenRequest) -> Void,
-                         errorHandler: @escaping(_ error: Error) -> Void) {
-        let urlComponentes = URLComponents(string: "\(baseAPIURL)/authentication/token/new?api_key=\(apiKey)")
-        
-        guard let url = urlComponentes?.url else {
-            errorHandler(MovieError.invalidEndpoint)
-            return
+    func getRequestToken(result: @escaping (Result<Login.TokenRequest, Error>) -> Void) {
+        NetworkService.makeRequest(TMDBEndpoint.requestToken) { (response: Result<Login.TokenRequest, NetworkError>) in
+            switch response {
+            case .success(let data):
+                result(.success(data))
+            case.failure(let error):
+                result(.failure(error))
+            }
         }
-        
-        urlSession.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                errorHandler(MovieError.apiError)
-                return
-            }
-            
-            guard let data = data else {
-                errorHandler(MovieError.noData)
-                return
-            }
-            
-            do {
-                let tokenResponse = try self.jsonDecoder.decode(Login.TokenRequest.self,
-                                                                from: data)
-                DispatchQueue.main.async {
-                    successHandler(tokenResponse)
-                }
-            } catch {
-                errorHandler(MovieError.serializationError)
-            }
-        }.resume()
     }
 }

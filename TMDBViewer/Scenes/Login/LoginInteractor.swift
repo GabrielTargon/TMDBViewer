@@ -33,7 +33,7 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
                 self.presenter?.presentHome()
             case .failure(let error):
                 if error == .invalidResponse {
-                    self.presenter?.presentError(description: "Invalid APIKey. Please add APIkey on NetworkConsumer.swift")
+                    self.presenter?.presentError(description: "Invalid APIKey. Please add APIkey on MovieStore.swift")
                 } else {
                     self.presenter?.presentError(description: error.localizedDescription)
                 }

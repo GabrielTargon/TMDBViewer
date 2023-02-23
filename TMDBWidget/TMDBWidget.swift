@@ -26,34 +26,34 @@ struct Provider: TimelineProvider {
                      completion: @escaping (Timeline<SimpleEntry>) -> ()) {
         var entries: [SimpleEntry] = []
 
-        HomeWorker().fetchMovies(endpoint: .nowPlaying) { result in
-            switch result {
-            case .success(let response):
-                let imageURL = response.results[0].posterURL
-                let title = response.results[0].title
-                
-                let entry = SimpleEntry(imageURL: imageURL,
-                                        title: title)
-                
-                let timeline = Timeline(entries: [entry],
-                                        policy: .atEnd)
-                completion(timeline)
-            case .failure:
-                let currentDate = Date()
-                for hourOffset in 0 ..< 5 {
-                    let entryDate = Calendar.current.date(byAdding: .hour,
-                                                          value: hourOffset,
-                                                          to: currentDate)!
-                    let entry = SimpleEntry(date: entryDate,
-                                            imageURL: URL(string: "")!,
-                                            title: "Falhou")
-                    entries.append(entry)
-                }
-                let timeline = Timeline(entries: entries,
-                                        policy: .atEnd)
-                completion(timeline)
-            }
-        }
+//        HomeWorker().fetchMovies(endpoint: .nowPlaying) { result in
+//            switch result {
+//            case .success(let response):
+//                let imageURL = response.results[0].posterURL
+//                let title = response.results[0].title
+//                
+//                let entry = SimpleEntry(imageURL: imageURL,
+//                                        title: title)
+//                
+//                let timeline = Timeline(entries: [entry],
+//                                        policy: .atEnd)
+//                completion(timeline)
+//            case .failure:
+//                let currentDate = Date()
+//                for hourOffset in 0 ..< 5 {
+//                    let entryDate = Calendar.current.date(byAdding: .hour,
+//                                                          value: hourOffset,
+//                                                          to: currentDate)!
+//                    let entry = SimpleEntry(date: entryDate,
+//                                            imageURL: URL(string: "")!,
+//                                            title: "Falhou")
+//                    entries.append(entry)
+//                }
+//                let timeline = Timeline(entries: entries,
+//                                        policy: .atEnd)
+//                completion(timeline)
+//            }
+//        }
     }
 }
 

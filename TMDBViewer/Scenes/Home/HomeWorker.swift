@@ -12,46 +12,19 @@
 
 import Foundation
 
-class HomeWorker: NetworkConsumer {
+class HomeWorker {
     
     func fetchMovies(endpoint: Home.Endpoint,
                      params: [String: String]? = nil,
-                     result: @escaping (Result<MoviesResponse, Error>) -> Void) {
-        guard var urlComponents = URLComponents(string: "\(baseAPIURL)/movie/\(endpoint.rawValue)") else {
-            result(.failure(MovieError.invalidEndpoint))
-            return
-        }
+                     result: @escaping (Result<MoviesResponse, NetworkError>) -> Void) {
         
-        var queryItems = [URLQueryItem(name: "api_key", value: apiKey)]
-        if let params = params {
-            queryItems.append(contentsOf: params.map { URLQueryItem(name: $0.key, value: $0.value) })
+        NetworkService.makeRequest(TMDBEndpoint.movies(endpoint.rawValue)) { (response: Result<MoviesResponse, NetworkError>) in
+            switch response {
+            case .success(let data):
+                result(.success(data))
+            case.failure(let error):
+                result(.failure(error))
+            }
         }
-        urlComponents.queryItems = queryItems
-        
-        guard let url = urlComponents.url else {
-            result(.failure(MovieError.invalidEndpoint))
-            return
-        }
-        
-        urlSession.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                result(.failure(MovieError.apiError))
-                return
-            }
-            
-            guard let data = data else {
-                result(.failure(MovieError.noData))
-                return
-            }
-            
-            do {
-                let moviesResponse = try self.jsonDecoder.decode(MoviesResponse.self, from: data)
-                DispatchQueue.main.async {
-                    result(.success(moviesResponse))
-                }
-            } catch {
-                result(.failure(MovieError.serializationError))
-            }
-        }.resume()
     }
 }
