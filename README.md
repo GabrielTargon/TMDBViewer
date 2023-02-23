@@ -1,11 +1,9 @@
 # TMDBViewer
 iOS Application written in Swift with TMDB API
 
-## First Steps
-
-To make this app functional its necessary a API Key of TMDB API, [this link](https://developers.themoviedb.org/3/getting-started/authentication) has more instructions.
-
-After getting a API you must change it on `Services/NetworkConsumer.swift`
+| ![alt text](https://github.com/GabrielTargon/TMDBViewer/blob/986a8878ca0ce58dbf1a6b414ddaa4cdbf8a15e6/Images/TMDB-Home.png) | ![alt text](https://github.com/GabrielTargon/TMDBViewer/blob/986a8878ca0ce58dbf1a6b414ddaa4cdbf8a15e6/Images/TMDB-Home.png) | ![alt text](https://github.com/GabrielTargon/TMDBViewer/blob/986a8878ca0ce58dbf1a6b414ddaa4cdbf8a15e6/Images/TMDB-Detail.png) |
+| :---: | :---: | :---: |
+| Login | Home | Detail |
 
 ## Requirements
 
