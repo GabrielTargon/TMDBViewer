@@ -14,12 +14,12 @@ extension UIColor {
     static let tmdbBlack40 = UIColor(hexString: "000000")
     static let tmdbAlmostBlack = UIColor(hexString: "0a151b")
     
-    static let tmdbSlateGrey = UIColor(hexString: "636366")
+    static let tmdbSlateGrey = UIColor(hexString: "B0B0B0")
     static let tmdbPinkishGrey = UIColor(hexString: "bebebe")
     static let tmdbBattleshipGrey = UIColor(hexString: "767680")
     
-    static let tmdbGreenBlue = UIColor(hexString: "01d277")
-    static let tmdbAlgaeGreen = UIColor(hexString: "21cd65")
-    static let tmdbDeepSkyBlue = UIColor(hexString: "0a84ff")
+    static let tmdbGreenBlue = UIColor(hexString: "0d253f")
+    static let tmdbAlgaeGreen = UIColor(hexString: "8DC99D")
+    static let tmdbDeepSkyBlue = UIColor(hexString: "01b4e4")
     static let tmdbCoral = UIColor(hexString: "ff453a")
 }

@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 enum LoginImages: String {
-    case background = "login-background"
+    case background = "background-login"
+    case logo = "TMDB-logo"
     
     var raw: UIImage {
         return UIImage(named: self.rawValue) ?? UIImage()

@@ -280,7 +280,6 @@
 		B5D482FF294D03B40079E962 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B5FE91E22900DAF000E8099A /* Assets.xcassets */,
 				B5D4830D294DFA680079E962 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -320,6 +319,7 @@
 				B5FE91DB2900DAEF00E8099A /* SceneDelegate.swift */,
 				B5FE91E42900DAF000E8099A /* LaunchScreen.storyboard */,
 				B5FE91E72900DAF000E8099A /* Info.plist */,
+				B5FE91E22900DAF000E8099A /* Assets.xcassets */,
 				B5D482FF294D03B40079E962 /* Resources */,
 				B5FE91ED2900DB4F00E8099A /* Scenes */,
 				B5D482FC294C15580079E962 /* Constants */,
