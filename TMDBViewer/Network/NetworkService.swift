@@ -16,14 +16,13 @@ class NetworkService {
         let session = URLSession.shared
         do {
             let request = try request.asURLRequest()
-            let task = session.dataTask(with: request) { (data, response, error) in
+            session.dataTask(with: request) { (data, response, error) in
                 if let data = data, let responseData: T = NetworkService.decodeFormData(data: data) {
                     DispatchQueue.main.async {completion(.success(responseData))}
                 } else {
                     DispatchQueue.main.async {completion(.failure(.decodeError))}
                 }
-            }
-            task.resume()
+            }.resume()
         } catch let error {
             guard let error = error as? NetworkError else {
                 DispatchQueue.main.async {completion(.failure(.unknown))}

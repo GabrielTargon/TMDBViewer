@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51F44C329A9443500A5FB47 /* NetworkWidgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F44C129A9419C00A5FB47 /* NetworkWidgetService.swift */; };
+		B51F44C429A944B500A5FB47 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE92092900DB5800E8099A /* Movie.swift */; };
+		B51F44C529A944B800A5FB47 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C49D2906A0C60044C5B4 /* MovieResponse.swift */; };
+		B51F44C729A9460900A5FB47 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */; };
+		B51F44C829AB0C2200A5FB47 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */; };
+		B51F44C929AB0C2500A5FB47 /* HTTPRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */; };
+		B51F44CA29AB0C2900A5FB47 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */; };
+		B51F44CB29AB0C5000A5FB47 /* TMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */; };
+		B51F44CC29AD644000A5FB47 /* TMDBAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */; };
 		B5B7C46D29035F9C0044C5B4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46729035F9C0044C5B4 /* LoginPresenter.swift */; };
 		B5B7C46E29035F9C0044C5B4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46829035F9C0044C5B4 /* LoginRouter.swift */; };
 		B5B7C46F29035F9C0044C5B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46929035F9C0044C5B4 /* LoginViewController.swift */; };
@@ -21,9 +30,6 @@
 		B5B7C4B2290778E70044C5B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B7C4B1290778E70044C5B4 /* Assets.xcassets */; };
 		B5B7C4B6290778E70044C5B4 /* TMDBWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B5B7C4A8290778E50044C5B4 /* TMDBWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B5B7C4BF2908A34C0044C5B4 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE91F62900DB4F00E8099A /* HomeModels.swift */; };
-		B5B7C4C12908A3590044C5B4 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C49D2906A0C60044C5B4 /* MovieResponse.swift */; };
-		B5B7C4C22908A4430044C5B4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE92092900DB5800E8099A /* Movie.swift */; };
-		B5C2E4A029A6A157009A0EF4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B5C2E49F29A6A157009A0EF4 /* Alamofire */; };
 		B5C2E4A229A6A228009A0EF4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */; };
 		B5C2E4A429A6B5DB009A0EF4 /* HTTPRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */; };
 		B5C2E4A629A6CCC4009A0EF4 /* TMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */; };
@@ -31,7 +37,11 @@
 		B5C2E4AA29A6D18B009A0EF4 /* TMDBAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */; };
 		B5C2E4AC29A6E249009A0EF4 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */; };
 		B5C2E4AE29A7E48C009A0EF4 /* TMDBFetchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4AD29A7E48C009A0EF4 /* TMDBFetchResponse.swift */; };
-		B5D482F6294C04000079E962 /* TMDBWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D482F5294C04000079E962 /* TMDBWidgetView.swift */; };
+		B5C2E4B429A86120009A0EF4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */; };
+		B5C2E4B529A8619B009A0EF4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */; };
+		B5C2E4B729A86228009A0EF4 /* Color+Pallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B629A86228009A0EF4 /* Color+Pallet.swift */; };
+		B5C2E4B829A86270009A0EF4 /* Color+Pallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B629A86228009A0EF4 /* Color+Pallet.swift */; };
+		B5D482F6294C04000079E962 /* TMDBSmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D482F5294C04000079E962 /* TMDBSmallWidgetView.swift */; };
 		B5D482F9294C05660079E962 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B5D482F8294C05660079E962 /* Kingfisher */; };
 		B5D482FB294C05FF0079E962 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B5D482FA294C05FF0079E962 /* Kingfisher */; };
 		B5D482FE294C15940079E962 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D482FD294C15940079E962 /* ImageConstants.swift */; };
@@ -92,6 +102,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B51F44C129A9419C00A5FB47 /* NetworkWidgetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWidgetService.swift; sourceTree = "<group>"; };
 		B5B7C46729035F9C0044C5B4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		B5B7C46829035F9C0044C5B4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		B5B7C46929035F9C0044C5B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +124,9 @@
 		B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIConstants.swift; sourceTree = "<group>"; };
 		B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
 		B5C2E4AD29A7E48C009A0EF4 /* TMDBFetchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBFetchResponse.swift; sourceTree = "<group>"; };
-		B5D482F5294C04000079E962 /* TMDBWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBWidgetView.swift; sourceTree = "<group>"; };
+		B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		B5C2E4B629A86228009A0EF4 /* Color+Pallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Pallet.swift"; sourceTree = "<group>"; };
+		B5D482F5294C04000079E962 /* TMDBSmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBSmallWidgetView.swift; sourceTree = "<group>"; };
 		B5D482FD294C15940079E962 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		B5D48304294D05F60079E962 /* LoginStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStrings.swift; sourceTree = "<group>"; };
 		B5D48306294D118A0079E962 /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
@@ -166,13 +179,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D482F9294C05660079E962 /* Kingfisher in Frameworks */,
-				B5C2E4A029A6A157009A0EF4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B51F44BF29A9415B00A5FB47 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B51F44C129A9419C00A5FB47 /* NetworkWidgetService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		B5B7C46629035F870044C5B4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				B5B7C4AF290778E50044C5B4 /* TMDBWidget.swift */,
-				B5D482F5294C04000079E962 /* TMDBWidgetView.swift */,
+				B5D482F5294C04000079E962 /* TMDBSmallWidgetView.swift */,
+				B51F44BF29A9415B00A5FB47 /* Service */,
 				B5B7C4B1290778E70044C5B4 /* Assets.xcassets */,
 				B5B7C4B3290778E70044C5B4 /* Info.plist */,
 			);
@@ -280,6 +301,7 @@
 		B5D482FF294D03B40079E962 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B5FE91E22900DAF000E8099A /* Assets.xcassets */,
 				B5D4830D294DFA680079E962 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -319,7 +341,6 @@
 				B5FE91DB2900DAEF00E8099A /* SceneDelegate.swift */,
 				B5FE91E42900DAF000E8099A /* LaunchScreen.storyboard */,
 				B5FE91E72900DAF000E8099A /* Info.plist */,
-				B5FE91E22900DAF000E8099A /* Assets.xcassets */,
 				B5D482FF294D03B40079E962 /* Resources */,
 				B5FE91ED2900DB4F00E8099A /* Scenes */,
 				B5D482FC294C15580079E962 /* Constants */,
@@ -398,6 +419,8 @@
 			children = (
 				B5FE920E2901838300E8099A /* UIColor+Pallet.swift */,
 				B5FE920C2900E66A00E8099A /* UIColor+Extension.swift */,
+				B5C2E4B629A86228009A0EF4 /* Color+Pallet.swift */,
+				B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */,
 				B5FE92142901E57400E8099A /* Date+Extension.swift */,
 				B5D48306294D118A0079E962 /* UIResponder+Extension.swift */,
 			);
@@ -458,7 +481,6 @@
 			name = TMDBViewer;
 			packageProductDependencies = (
 				B5D482F8294C05660079E962 /* Kingfisher */,
-				B5C2E49F29A6A157009A0EF4 /* Alamofire */,
 			);
 			productName = TMDBViewer;
 			productReference = B5FE91D62900DAEF00E8099A /* TMDBViewer.app */;
@@ -494,7 +516,6 @@
 			mainGroup = B5FE91CD2900DAEF00E8099A;
 			packageReferences = (
 				B5D482F7294C05660079E962 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				B5C2E49E29A6A157009A0EF4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B5FE91D72900DAEF00E8099A /* Products */;
 			projectDirPath = "";
@@ -532,11 +553,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B7C4C22908A4430044C5B4 /* Movie.swift in Sources */,
+				B51F44C829AB0C2200A5FB47 /* NetworkService.swift in Sources */,
+				B5C2E4B829A86270009A0EF4 /* Color+Pallet.swift in Sources */,
+				B51F44C929AB0C2500A5FB47 /* HTTPRequestParams.swift in Sources */,
+				B51F44C329A9443500A5FB47 /* NetworkWidgetService.swift in Sources */,
+				B51F44CA29AB0C2900A5FB47 /* URLRequestConvertible.swift in Sources */,
+				B5C2E4B529A8619B009A0EF4 /* Color+Extension.swift in Sources */,
 				B5B7C4BF2908A34C0044C5B4 /* HomeModels.swift in Sources */,
 				B5B7C4B0290778E50044C5B4 /* TMDBWidget.swift in Sources */,
-				B5B7C4C12908A3590044C5B4 /* MovieResponse.swift in Sources */,
-				B5D482F6294C04000079E962 /* TMDBWidgetView.swift in Sources */,
+				B51F44C529A944B800A5FB47 /* MovieResponse.swift in Sources */,
+				B51F44CC29AD644000A5FB47 /* TMDBAPIConstants.swift in Sources */,
+				B51F44C429A944B500A5FB47 /* Movie.swift in Sources */,
+				B5D482F6294C04000079E962 /* TMDBSmallWidgetView.swift in Sources */,
+				B51F44C729A9460900A5FB47 /* NetworkError.swift in Sources */,
+				B51F44CB29AB0C5000A5FB47 /* TMDBEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +605,7 @@
 				B5D4830A294D1FA60079E962 /* LocalizationProtocol.swift in Sources */,
 				B5B7C47029035F9C0044C5B4 /* LoginInteractor.swift in Sources */,
 				B5FE91FE2900DB4F00E8099A /* HomeView.swift in Sources */,
+				B5C2E4B429A86120009A0EF4 /* Color+Extension.swift in Sources */,
 				B5FE91DA2900DAEF00E8099A /* AppDelegate.swift in Sources */,
 				B5B7C47129035F9C0044C5B4 /* LoginView.swift in Sources */,
 				B5FE92052900DB4F00E8099A /* ViewCode.swift in Sources */,
@@ -585,6 +616,7 @@
 				B5D48314294E598F0079E962 /* DetailStrings.swift in Sources */,
 				B5FE921E2901EBF400E8099A /* DetailWorker.swift in Sources */,
 				B5C2E4AA29A6D18B009A0EF4 /* TMDBAPIConstants.swift in Sources */,
+				B5C2E4B729A86228009A0EF4 /* Color+Pallet.swift in Sources */,
 				B5C2E4A229A6A228009A0EF4 /* NetworkService.swift in Sources */,
 				B5FE91DC2900DAEF00E8099A /* SceneDelegate.swift in Sources */,
 			);
@@ -890,14 +922,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B5C2E49E29A6A157009A0EF4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		B5D482F7294C05660079E962 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -909,11 +933,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B5C2E49F29A6A157009A0EF4 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B5C2E49E29A6A157009A0EF4 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
 		B5D482F8294C05660079E962 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B5D482F7294C05660079E962 /* XCRemoteSwiftPackageReference "Kingfisher" */;

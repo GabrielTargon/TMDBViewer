@@ -1,15 +1,16 @@
 //
-//  TMDBWidgetView.swift
+//  TMDBSmallWidgetView.swift
 //  TMDBWidgetExtension
 //
 //  Created by Gabriel Targon on 15/12/22.
 //
 
 import SwiftUI
+import WidgetKit
 
-struct TMDBWidgetView: View {
+struct TMDBSmallWidgetView: View {
     var title: String
-    var imageURL: URL
+    var imageURL: URL?
     
     var body: some View {
         ZStack {
@@ -26,17 +27,27 @@ struct TMDBWidgetView: View {
                    alignment: .bottomLeading)
             .padding(.leading, 10)
             .padding(.bottom, 10)
+            
+            AsyncImage(url: imageURL) { image in
+                image
+                    .scaledToFit()
+            } placeholder: {
+                Image("TMDB-logo")
+                    .resizable()
+                    .frame(width: 100,
+                           height: 70)
+            }
         }
         .background(
-            AsyncImage(url: imageURL)
-                .scaledToFill()
+            Color.tmdbAlmostBlack
         )
     }
 }
 
-struct TMDBWidgetView_Previews: PreviewProvider {
+struct TMDBSmallWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        TMDBWidgetView(title: "TMDBView",
-                       imageURL: URL(string: "")!)
+        TMDBSmallWidgetView(title: "TMDB",
+                            imageURL: nil)
+        .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

@@ -7,68 +7,41 @@
 
 import WidgetKit
 import SwiftUI
-import UIKit
 
 struct Provider: TimelineProvider {
+    
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(imageURL: URL(string: "https://www.themoviedb.org/t/p/original/8Zhq0uyk9MLaqJNW3EhDHepAFSP.jpg")!,
-                    title: "Teste")
+        SimpleEntry(title: "TMDB",
+                    imageURL: nil)
     }
 
     func getSnapshot(in context: Context,
                      completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(imageURL: URL(string: "https://www.themoviedb.org/t/p/original/8Zhq0uyk9MLaqJNW3EhDHepAFSP.jpg")!,
-                                title: "Teste")
+        let entry = SimpleEntry(title: "TMDB",
+                                imageURL: nil)
         completion(entry)
     }
 
     func getTimeline(in context: Context,
                      completion: @escaping (Timeline<SimpleEntry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-//        HomeWorker().fetchMovies(endpoint: .nowPlaying) { result in
-//            switch result {
-//            case .success(let response):
-//                let imageURL = response.results[0].posterURL
-//                let title = response.results[0].title
-//                
-//                let entry = SimpleEntry(imageURL: imageURL,
-//                                        title: title)
-//                
-//                let timeline = Timeline(entries: [entry],
-//                                        policy: .atEnd)
-//                completion(timeline)
-//            case .failure:
-//                let currentDate = Date()
-//                for hourOffset in 0 ..< 5 {
-//                    let entryDate = Calendar.current.date(byAdding: .hour,
-//                                                          value: hourOffset,
-//                                                          to: currentDate)!
-//                    let entry = SimpleEntry(date: entryDate,
-//                                            imageURL: URL(string: "")!,
-//                                            title: "Falhou")
-//                    entries.append(entry)
-//                }
-//                let timeline = Timeline(entries: entries,
-//                                        policy: .atEnd)
-//                completion(timeline)
-//            }
-//        }
+        NetworkWidgetService().fetchMoviesList { timelineEntry in
+            completion(timelineEntry)
+        }
     }
 }
 
-struct SimpleEntry: TimelineEntry{
+struct SimpleEntry: TimelineEntry {
     var date = Date()
-    let imageURL: URL
     let title: String
+    let imageURL: URL?
 }
 
 struct TMDBWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        TMDBWidgetView(title: entry.title,
-                       imageURL: entry.imageURL)
+        TMDBSmallWidgetView(title: entry.title,
+                            imageURL: entry.imageURL)
     }
 }
 
@@ -88,8 +61,8 @@ struct TMDBWidget: Widget {
 
 struct TMDBWidget_Previews: PreviewProvider {
     static var previews: some View {
-        TMDBWidgetEntryView(entry: SimpleEntry(imageURL: URL(string: "https://www.themoviedb.org/t/p/original/8Zhq0uyk9MLaqJNW3EhDHepAFSP.jpg")!,
-                                               title: "Teste"))
+        TMDBWidgetEntryView(entry: SimpleEntry(title: "TMDB",
+                                               imageURL: nil))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

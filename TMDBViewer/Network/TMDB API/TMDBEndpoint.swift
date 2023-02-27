@@ -61,7 +61,7 @@ extension TMDBEndpoint {
     
     func asURLRequest() throws -> URLRequest {
         guard var url = URL(string: baseURL) else {
-            throw NetworkError.badURL
+            throw NetworkError.invalidURL
         }
         url = url.appendingPathComponent(path)
         var request = URLRequest(url: url)
