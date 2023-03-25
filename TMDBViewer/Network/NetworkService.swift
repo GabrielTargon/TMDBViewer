@@ -9,8 +9,6 @@ import Foundation
 
 class NetworkService {
     
-    let session = URLSession.shared
-    
     static func makeRequest<T:Codable>(_ request: HTTPRequestParams,
                                        completion: @escaping (Result<T, NetworkError>) -> Void) {
         do {
