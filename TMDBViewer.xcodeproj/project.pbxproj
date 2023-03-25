@@ -13,7 +13,6 @@
 		B51F44C729A9460900A5FB47 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */; };
 		B51F44C829AB0C2200A5FB47 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */; };
 		B51F44C929AB0C2500A5FB47 /* HTTPRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */; };
-		B51F44CA29AB0C2900A5FB47 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */; };
 		B51F44CB29AB0C5000A5FB47 /* TMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */; };
 		B51F44CC29AD644000A5FB47 /* TMDBAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */; };
 		B5B7C46D29035F9C0044C5B4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46729035F9C0044C5B4 /* LoginPresenter.swift */; };
@@ -35,8 +34,6 @@
 		B5C2E4A629A6CCC4009A0EF4 /* TMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */; };
 		B5C2E4A829A6D05C009A0EF4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */; };
 		B5C2E4AA29A6D18B009A0EF4 /* TMDBAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */; };
-		B5C2E4AC29A6E249009A0EF4 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */; };
-		B5C2E4AE29A7E48C009A0EF4 /* TMDBFetchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4AD29A7E48C009A0EF4 /* TMDBFetchResponse.swift */; };
 		B5C2E4B429A86120009A0EF4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */; };
 		B5C2E4B529A8619B009A0EF4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */; };
 		B5C2E4B729A86228009A0EF4 /* Color+Pallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B629A86228009A0EF4 /* Color+Pallet.swift */; };
@@ -122,8 +119,6 @@
 		B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBEndpoint.swift; sourceTree = "<group>"; };
 		B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIConstants.swift; sourceTree = "<group>"; };
-		B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
-		B5C2E4AD29A7E48C009A0EF4 /* TMDBFetchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBFetchResponse.swift; sourceTree = "<group>"; };
 		B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		B5C2E4B629A86228009A0EF4 /* Color+Pallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Pallet.swift"; sourceTree = "<group>"; };
 		B5D482F5294C04000079E962 /* TMDBSmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBSmallWidgetView.swift; sourceTree = "<group>"; };
@@ -285,7 +280,6 @@
 			children = (
 				B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */,
 				B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */,
-				B5C2E4AD29A7E48C009A0EF4 /* TMDBFetchResponse.swift */,
 			);
 			path = "TMDB API";
 			sourceTree = "<group>";
@@ -398,8 +392,8 @@
 				B5FE92082900DB5800E8099A /* Models */,
 				B5C2E4B129A8215B009A0EF4 /* TMDB API */,
 				B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */,
+				B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */,
 				B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */,
-				B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -409,7 +403,6 @@
 			children = (
 				B5FE92092900DB5800E8099A /* Movie.swift */,
 				B5B7C49D2906A0C60044C5B4 /* MovieResponse.swift */,
-				B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -557,7 +550,6 @@
 				B5C2E4B829A86270009A0EF4 /* Color+Pallet.swift in Sources */,
 				B51F44C929AB0C2500A5FB47 /* HTTPRequestParams.swift in Sources */,
 				B51F44C329A9443500A5FB47 /* NetworkWidgetService.swift in Sources */,
-				B51F44CA29AB0C2900A5FB47 /* URLRequestConvertible.swift in Sources */,
 				B5C2E4B529A8619B009A0EF4 /* Color+Extension.swift in Sources */,
 				B5B7C4BF2908A34C0044C5B4 /* HomeModels.swift in Sources */,
 				B5B7C4B0290778E50044C5B4 /* TMDBWidget.swift in Sources */,
@@ -581,7 +573,6 @@
 				B5FE91FF2900DB4F00E8099A /* HomeViewController.swift in Sources */,
 				B5FE92032900DB4F00E8099A /* HomeModels.swift in Sources */,
 				B5D48312294E591A0079E962 /* HomeStrings.swift in Sources */,
-				B5C2E4AC29A6E249009A0EF4 /* URLRequestConvertible.swift in Sources */,
 				B5C2E4A429A6B5DB009A0EF4 /* HTTPRequestParams.swift in Sources */,
 				B5C2E4A629A6CCC4009A0EF4 /* TMDBEndpoint.swift in Sources */,
 				B5D482FE294C15940079E962 /* ImageConstants.swift in Sources */,
@@ -611,7 +602,6 @@
 				B5FE92052900DB4F00E8099A /* ViewCode.swift in Sources */,
 				B5FE92022900DB4F00E8099A /* HomeWorker.swift in Sources */,
 				B5B7C48F290492A00044C5B4 /* LoginModels.swift in Sources */,
-				B5C2E4AE29A7E48C009A0EF4 /* TMDBFetchResponse.swift in Sources */,
 				B5FE92152901E57400E8099A /* Date+Extension.swift in Sources */,
 				B5D48314294E598F0079E962 /* DetailStrings.swift in Sources */,
 				B5FE921E2901EBF400E8099A /* DetailWorker.swift in Sources */,
@@ -676,7 +666,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -703,7 +693,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

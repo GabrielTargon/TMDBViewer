@@ -17,7 +17,11 @@ class DetailWorker {
     func fetchMovie(id: Int,
                     result: @escaping (Result<Movie, NetworkError>) -> Void) {
         
-        NetworkService.makeRequest(TMDBEndpoint.movie(id)) { (response: Result<Movie, NetworkError>) in
+        var endpoint = TMDBEndpoint(path: "movie/\(id)",
+                                    method: .get)
+        endpoint.parameters = ["append_to_response" : "credits"]
+        
+        NetworkService.makeRequest(endpoint) { (response: Result<Movie, NetworkError>) in
             switch response {
             case .success(let data):
                 result(.success(data))

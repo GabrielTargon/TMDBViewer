@@ -18,7 +18,10 @@ class HomeWorker {
                      params: [String: String]? = nil,
                      result: @escaping (Result<MoviesResponse, NetworkError>) -> Void) {
         
-        NetworkService.makeRequest(TMDBEndpoint.movies(endpoint.rawValue)) { (response: Result<MoviesResponse, NetworkError>) in
+        let endpoint = TMDBEndpoint(path: "movie/\(endpoint.rawValue)",
+                                    method: .get)
+        
+        NetworkService.makeRequest(endpoint) { (response: Result<MoviesResponse, NetworkError>) in
             switch response {
             case .success(let data):
                 result(.success(data))
