@@ -7,7 +7,12 @@
 
 import Foundation
 
-class NetworkService {
+protocol NetworkServiceProviderProtocol {
+    static func makeRequest<T:Codable>(_ request: HTTPRequestParams,
+                                       completion: @escaping (Result<T, NetworkError>) -> Void)
+}
+
+class NetworkService: NetworkServiceProviderProtocol {
     
     static func makeRequest<T:Codable>(_ request: HTTPRequestParams,
                                        completion: @escaping (Result<T, NetworkError>) -> Void) {

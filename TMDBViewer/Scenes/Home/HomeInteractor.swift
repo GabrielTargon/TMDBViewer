@@ -20,12 +20,13 @@ protocol HomeDataStore {}
 
 class HomeInteractor: HomeBusinessLogic, HomeDataStore {
     var presenter: HomePresentationLogic?
-    var worker: HomeWorker = HomeWorker()
+    var worker: HomeWorkLogic?
     
     // MARK: Requests
     
     func requestMoviesList(request: Home.Movies.Request) {
-        worker.fetchMovies(endpoint: request.endpoint) { [weak self] result in
+        worker?.fetchMovies(endpoint: request.endpoint,
+                            params: nil) { [weak self] result in
             switch result {
             case .success(let response):
                 let response = Home.Movies.Response(movies: response)

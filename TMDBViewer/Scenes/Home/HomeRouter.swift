@@ -21,9 +21,16 @@ protocol HomeDataPassing {
     var dataStore: HomeDataStore? { get }
 }
 
-class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing {
-    weak var viewController: HomeViewController?
+class HomeRouter: HomeRoutingLogic, HomeDataPassing {
+    weak var viewController: UIViewController?
     var dataStore: HomeDataStore?
+    var mainDispatchQueue: DispatchQueueType
+    
+    init(viewController: UIViewController? = nil, dataStore: HomeDataStore? = nil, mainDispatchQueue: DispatchQueueType = DispatchQueue.main) {
+        self.viewController = viewController
+        self.dataStore = dataStore
+        self.mainDispatchQueue = mainDispatchQueue
+    }
     
     // MARK: Routing
     
@@ -36,7 +43,7 @@ class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing {
     }
     
     func routeToError(description: String) {
-        DispatchQueue.main.async {
+        mainDispatchQueue.async {
             let alert = UIAlertController(title: HomeStrings.errorTitle.localized,
                                           message: description,
                                           preferredStyle: .alert)

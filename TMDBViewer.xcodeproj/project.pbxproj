@@ -15,6 +15,26 @@
 		B51F44C929AB0C2500A5FB47 /* HTTPRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */; };
 		B51F44CB29AB0C5000A5FB47 /* TMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */; };
 		B51F44CC29AD644000A5FB47 /* TMDBAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */; };
+		B575638629F080E400BA4621 /* HomeInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575638529F080E400BA4621 /* HomeInteractorSpy.swift */; };
+		B575638829F0817200BA4621 /* HomeRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575638729F0817200BA4621 /* HomeRouterSpy.swift */; };
+		B57D564B29CFC31700EF75D1 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564729CFC31700EF75D1 /* HomeViewControllerTests.swift */; };
+		B57D564C29CFC31700EF75D1 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564829CFC31700EF75D1 /* HomeInteractorTests.swift */; };
+		B57D564D29CFC31700EF75D1 /* HomeWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564929CFC31700EF75D1 /* HomeWorkerTests.swift */; };
+		B57D564E29CFC31700EF75D1 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564A29CFC31700EF75D1 /* HomePresenterTests.swift */; };
+		B589177B29F09ADA0034A6B8 /* HomeViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589177A29F09ADA0034A6B8 /* HomeViewControllerSpy.swift */; };
+		B589177E29F09CB40034A6B8 /* HomeSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589177D29F09CB40034A6B8 /* HomeSeeds.swift */; };
+		B5A7F35929F591C1004F5593 /* MoviesResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B5A7F35829F591C1004F5593 /* MoviesResponse.json */; };
+		B5A7F35B29F595D9004F5593 /* GenericDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F35A29F595D9004F5593 /* GenericDecoder.swift */; };
+		B5A7F35D29F5F964004F5593 /* HomeWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F35C29F5F964004F5593 /* HomeWorkerSpy.swift */; };
+		B5A7F35F29F5F975004F5593 /* HomePresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F35E29F5F975004F5593 /* HomePresenterSpy.swift */; };
+		B5A7F36129F600E1004F5593 /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36029F600E1004F5593 /* HomeRouterTests.swift */; };
+		B5A7F36429F6B519004F5593 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36329F6B519004F5593 /* MockViewController.swift */; };
+		B5A7F36629F6B838004F5593 /* MockNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36529F6B838004F5593 /* MockNavigationController.swift */; };
+		B5A7F36929F6CE9E004F5593 /* MockWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36829F6CE9E004F5593 /* MockWorker.swift */; };
+		B5A7F36B29F6D265004F5593 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36A29F6D265004F5593 /* MockData.swift */; };
+		B5A7F36D29F71A21004F5593 /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36C29F71A21004F5593 /* XCTestCase+Extension.swift */; };
+		B5A7F37029F7473A004F5593 /* MockDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36F29F7473A004F5593 /* MockDispatchQueue.swift */; };
+		B5A7F37229F74781004F5593 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F37129F74781004F5593 /* DispatchQueue+Extension.swift */; };
 		B5B7C46D29035F9C0044C5B4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46729035F9C0044C5B4 /* LoginPresenter.swift */; };
 		B5B7C46E29035F9C0044C5B4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46829035F9C0044C5B4 /* LoginRouter.swift */; };
 		B5B7C46F29035F9C0044C5B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46929035F9C0044C5B4 /* LoginViewController.swift */; };
@@ -75,6 +95,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B57D564129CFC1AB00EF75D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE91CE2900DAEF00E8099A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FE91D52900DAEF00E8099A;
+			remoteInfo = TMDBViewer;
+		};
 		B5B7C4B4290778E70044C5B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5FE91CE2900DAEF00E8099A /* Project object */;
@@ -100,6 +127,27 @@
 
 /* Begin PBXFileReference section */
 		B51F44C129A9419C00A5FB47 /* NetworkWidgetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWidgetService.swift; sourceTree = "<group>"; };
+		B575638529F080E400BA4621 /* HomeInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorSpy.swift; sourceTree = "<group>"; };
+		B575638729F0817200BA4621 /* HomeRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterSpy.swift; sourceTree = "<group>"; };
+		B57D563D29CFC1AB00EF75D1 /* TMDBViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57D564729CFC31700EF75D1 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		B57D564829CFC31700EF75D1 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		B57D564929CFC31700EF75D1 /* HomeWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkerTests.swift; sourceTree = "<group>"; };
+		B57D564A29CFC31700EF75D1 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		B589177A29F09ADA0034A6B8 /* HomeViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerSpy.swift; sourceTree = "<group>"; };
+		B589177D29F09CB40034A6B8 /* HomeSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSeeds.swift; sourceTree = "<group>"; };
+		B5A7F35829F591C1004F5593 /* MoviesResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MoviesResponse.json; sourceTree = "<group>"; };
+		B5A7F35A29F595D9004F5593 /* GenericDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDecoder.swift; sourceTree = "<group>"; };
+		B5A7F35C29F5F964004F5593 /* HomeWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkerSpy.swift; sourceTree = "<group>"; };
+		B5A7F35E29F5F975004F5593 /* HomePresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterSpy.swift; sourceTree = "<group>"; };
+		B5A7F36029F600E1004F5593 /* HomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterTests.swift; sourceTree = "<group>"; };
+		B5A7F36329F6B519004F5593 /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
+		B5A7F36529F6B838004F5593 /* MockNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNavigationController.swift; sourceTree = "<group>"; };
+		B5A7F36829F6CE9E004F5593 /* MockWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWorker.swift; sourceTree = "<group>"; };
+		B5A7F36A29F6D265004F5593 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B5A7F36C29F71A21004F5593 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
+		B5A7F36F29F7473A004F5593 /* MockDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDispatchQueue.swift; sourceTree = "<group>"; };
+		B5A7F37129F74781004F5593 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
 		B5B7C46729035F9C0044C5B4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		B5B7C46829035F9C0044C5B4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		B5B7C46929035F9C0044C5B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +207,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B57D563A29CFC1AB00EF75D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5B7C4A5290778E50044C5B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +241,87 @@
 				B51F44C129A9419C00A5FB47 /* NetworkWidgetService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		B575638329F080B700BA4621 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B589177C29F09C8F0034A6B8 /* Seeds */,
+				B575638429F080BF00BA4621 /* Spies */,
+				B57D564729CFC31700EF75D1 /* HomeViewControllerTests.swift */,
+				B57D564829CFC31700EF75D1 /* HomeInteractorTests.swift */,
+				B57D564929CFC31700EF75D1 /* HomeWorkerTests.swift */,
+				B57D564A29CFC31700EF75D1 /* HomePresenterTests.swift */,
+				B5A7F36029F600E1004F5593 /* HomeRouterTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B575638429F080BF00BA4621 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				B575638529F080E400BA4621 /* HomeInteractorSpy.swift */,
+				B575638729F0817200BA4621 /* HomeRouterSpy.swift */,
+				B589177A29F09ADA0034A6B8 /* HomeViewControllerSpy.swift */,
+				B5A7F35C29F5F964004F5593 /* HomeWorkerSpy.swift */,
+				B5A7F35E29F5F975004F5593 /* HomePresenterSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		B57D563E29CFC1AB00EF75D1 /* TMDBViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B57D564629CFC23400EF75D1 /* Scenes */,
+				B5A7F35629F590C9004F5593 /* JSONs */,
+				B5A7F36229F6B50B004F5593 /* Support Files */,
+			);
+			path = TMDBViewerTests;
+			sourceTree = "<group>";
+		};
+		B57D564629CFC23400EF75D1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B575638329F080B700BA4621 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B589177C29F09C8F0034A6B8 /* Seeds */ = {
+			isa = PBXGroup;
+			children = (
+				B589177D29F09CB40034A6B8 /* HomeSeeds.swift */,
+			);
+			path = Seeds;
+			sourceTree = "<group>";
+		};
+		B5A7F35629F590C9004F5593 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				B5A7F35829F591C1004F5593 /* MoviesResponse.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
+		B5A7F36229F6B50B004F5593 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5A7F36729F6B840004F5593 /* Mock */,
+				B5A7F36C29F71A21004F5593 /* XCTestCase+Extension.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		B5A7F36729F6B840004F5593 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B5A7F36329F6B519004F5593 /* MockViewController.swift */,
+				B5A7F36529F6B838004F5593 /* MockNavigationController.swift */,
+				B5A7F36829F6CE9E004F5593 /* MockWorker.swift */,
+				B5A7F36A29F6D265004F5593 /* MockData.swift */,
+				B5A7F36F29F7473A004F5593 /* MockDispatchQueue.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		B5B7C46629035F870044C5B4 /* Login */ = {
@@ -314,6 +450,7 @@
 			children = (
 				B5FE91D82900DAEF00E8099A /* TMDBViewer */,
 				B5B7C4AE290778E50044C5B4 /* TMDBWidget */,
+				B57D563E29CFC1AB00EF75D1 /* TMDBViewerTests */,
 				B5B7C4A9290778E50044C5B4 /* Frameworks */,
 				B5FE91D72900DAEF00E8099A /* Products */,
 			);
@@ -324,6 +461,7 @@
 			children = (
 				B5FE91D62900DAEF00E8099A /* TMDBViewer.app */,
 				B5B7C4A8290778E50044C5B4 /* TMDBWidgetExtension.appex */,
+				B57D563D29CFC1AB00EF75D1 /* TMDBViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,6 +520,7 @@
 			isa = PBXGroup;
 			children = (
 				B5FE91F92900DB4F00E8099A /* ViewCode.swift */,
+				B5A7F35A29F595D9004F5593 /* GenericDecoder.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -416,6 +555,7 @@
 				B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */,
 				B5FE92142901E57400E8099A /* Date+Extension.swift */,
 				B5D48306294D118A0079E962 /* UIResponder+Extension.swift */,
+				B5A7F37129F74781004F5593 /* DispatchQueue+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -437,6 +577,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B57D563C29CFC1AB00EF75D1 /* TMDBViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57D564329CFC1AB00EF75D1 /* Build configuration list for PBXNativeTarget "TMDBViewerTests" */;
+			buildPhases = (
+				B57D563929CFC1AB00EF75D1 /* Sources */,
+				B57D563A29CFC1AB00EF75D1 /* Frameworks */,
+				B57D563B29CFC1AB00EF75D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B57D564229CFC1AB00EF75D1 /* PBXTargetDependency */,
+			);
+			name = TMDBViewerTests;
+			productName = TMDBViewerTests;
+			productReference = B57D563D29CFC1AB00EF75D1 /* TMDBViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B5B7C4A7290778E50044C5B4 /* TMDBWidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5B7C4BA290778E80044C5B4 /* Build configuration list for PBXNativeTarget "TMDBWidgetExtension" */;
@@ -486,9 +644,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					B57D563C29CFC1AB00EF75D1 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B5FE91D52900DAEF00E8099A;
+					};
 					B5B7C4A7290778E50044C5B4 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -516,11 +678,20 @@
 			targets = (
 				B5FE91D52900DAEF00E8099A /* TMDBViewer */,
 				B5B7C4A7290778E50044C5B4 /* TMDBWidgetExtension */,
+				B57D563C29CFC1AB00EF75D1 /* TMDBViewerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B57D563B29CFC1AB00EF75D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A7F35929F591C1004F5593 /* MoviesResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5B7C4A6290778E50044C5B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,6 +713,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B57D563929CFC1AB00EF75D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B589177E29F09CB40034A6B8 /* HomeSeeds.swift in Sources */,
+				B5A7F36129F600E1004F5593 /* HomeRouterTests.swift in Sources */,
+				B575638829F0817200BA4621 /* HomeRouterSpy.swift in Sources */,
+				B57D564C29CFC31700EF75D1 /* HomeInteractorTests.swift in Sources */,
+				B5A7F36D29F71A21004F5593 /* XCTestCase+Extension.swift in Sources */,
+				B589177B29F09ADA0034A6B8 /* HomeViewControllerSpy.swift in Sources */,
+				B5A7F36629F6B838004F5593 /* MockNavigationController.swift in Sources */,
+				B5A7F37029F7473A004F5593 /* MockDispatchQueue.swift in Sources */,
+				B57D564D29CFC31700EF75D1 /* HomeWorkerTests.swift in Sources */,
+				B57D564E29CFC31700EF75D1 /* HomePresenterTests.swift in Sources */,
+				B5A7F36429F6B519004F5593 /* MockViewController.swift in Sources */,
+				B575638629F080E400BA4621 /* HomeInteractorSpy.swift in Sources */,
+				B57D564B29CFC31700EF75D1 /* HomeViewControllerTests.swift in Sources */,
+				B5A7F35D29F5F964004F5593 /* HomeWorkerSpy.swift in Sources */,
+				B5A7F36B29F6D265004F5593 /* MockData.swift in Sources */,
+				B5A7F35F29F5F975004F5593 /* HomePresenterSpy.swift in Sources */,
+				B5A7F36929F6CE9E004F5593 /* MockWorker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5B7C4A4290778E50044C5B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -572,6 +767,7 @@
 				B5B7C46F29035F9C0044C5B4 /* LoginViewController.swift in Sources */,
 				B5FE91FF2900DB4F00E8099A /* HomeViewController.swift in Sources */,
 				B5FE92032900DB4F00E8099A /* HomeModels.swift in Sources */,
+				B5A7F35B29F595D9004F5593 /* GenericDecoder.swift in Sources */,
 				B5D48312294E591A0079E962 /* HomeStrings.swift in Sources */,
 				B5C2E4A429A6B5DB009A0EF4 /* HTTPRequestParams.swift in Sources */,
 				B5C2E4A629A6CCC4009A0EF4 /* TMDBEndpoint.swift in Sources */,
@@ -596,6 +792,7 @@
 				B5D4830A294D1FA60079E962 /* LocalizationProtocol.swift in Sources */,
 				B5B7C47029035F9C0044C5B4 /* LoginInteractor.swift in Sources */,
 				B5FE91FE2900DB4F00E8099A /* HomeView.swift in Sources */,
+				B5A7F37229F74781004F5593 /* DispatchQueue+Extension.swift in Sources */,
 				B5C2E4B429A86120009A0EF4 /* Color+Extension.swift in Sources */,
 				B5FE91DA2900DAEF00E8099A /* AppDelegate.swift in Sources */,
 				B5B7C47129035F9C0044C5B4 /* LoginView.swift in Sources */,
@@ -615,6 +812,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B57D564229CFC1AB00EF75D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FE91D52900DAEF00E8099A /* TMDBViewer */;
+			targetProxy = B57D564129CFC1AB00EF75D1 /* PBXContainerItemProxy */;
+		};
 		B5B7C4B5290778E70044C5B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5B7C4A7290778E50044C5B4 /* TMDBWidgetExtension */;
@@ -643,6 +845,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B57D564429CFC1AB00EF75D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GAZK96UR75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieltargon.TMDBViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDBViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDBViewer";
+			};
+			name = Debug;
+		};
+		B57D564529CFC1AB00EF75D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GAZK96UR75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieltargon.TMDBViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDBViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDBViewer";
+			};
+			name = Release;
+		};
 		B5B7C4B8290778E80044C5B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -882,6 +1122,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B57D564329CFC1AB00EF75D1 /* Build configuration list for PBXNativeTarget "TMDBViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57D564429CFC1AB00EF75D1 /* Debug */,
+				B57D564529CFC1AB00EF75D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5B7C4BA290778E80044C5B4 /* Build configuration list for PBXNativeTarget "TMDBWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

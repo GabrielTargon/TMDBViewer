@@ -19,7 +19,7 @@ protocol HomeDisplayLogic: AnyObject {
 
 class HomeViewController: UIViewController, HomeDisplayLogic {
     var interactor: HomeBusinessLogic?
-    var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
+    var router: (HomeRoutingLogic & HomeDataPassing)?
     
     let homeView = HomeView()
     
@@ -44,9 +44,11 @@ class HomeViewController: UIViewController, HomeDisplayLogic {
         let interactor = HomeInteractor()
         let presenter = HomePresenter()
         let router = HomeRouter()
+        let worker = HomeWorker()
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter
+        interactor.worker = worker
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor

@@ -12,10 +12,16 @@
 
 import Foundation
 
-class HomeWorker {
+protocol HomeWorkLogic {
+    func fetchMovies(endpoint: Home.Endpoint,
+                     params: [String: String]?,
+                     result: @escaping (Result<MoviesResponse, NetworkError>) -> Void)
+}
+
+class HomeWorker: HomeWorkLogic {
     
     func fetchMovies(endpoint: Home.Endpoint,
-                     params: [String: String]? = nil,
+                     params: [String: String]?,
                      result: @escaping (Result<MoviesResponse, NetworkError>) -> Void) {
         
         let endpoint = TMDBEndpoint(path: "movie/\(endpoint.rawValue)",
