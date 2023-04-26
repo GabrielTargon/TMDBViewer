@@ -8,6 +8,7 @@
 import XCTest
 
 class HomeInteractorTests: XCTestCase {
+    
     // MARK: Subject under test
     var sut: HomeInteractor!
     
@@ -39,8 +40,7 @@ class HomeInteractorTests: XCTestCase {
     }
     
     // MARK: Tests
-    
-    func testRequestMoviesListSuccess() {
+    func test_requestMoviesList_Success() {
         let seed = HomeSeeds.endpointStub
         let request = Home.Movies.Request(endpoint: seed)
         
@@ -50,10 +50,11 @@ class HomeInteractorTests: XCTestCase {
         XCTAssertTrue(presenterSpy.presentMoviesCalled)
     }
     
-    func testRequestMoviesListFailure() {
+    func test_requestMoviesList_Failure() {
+        workerSpy.resultType = .failure(errorType: .unknown)
+        
         let seed = HomeSeeds.endpointStub
         let request = Home.Movies.Request(endpoint: seed)
-        workerSpy.resultType = .failure
         
         sut.requestMoviesList(request: request)
         

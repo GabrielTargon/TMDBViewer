@@ -21,7 +21,7 @@ protocol DetailDataPassing {
 }
 
 class DetailRouter: NSObject, DetailRoutingLogic, DetailDataPassing {
-    weak var viewController: DetailViewController?
+    weak var viewController: UIViewController?
     var dataStore: DetailDataStore?
     
     func routeToError(description: String) {

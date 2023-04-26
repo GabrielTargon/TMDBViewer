@@ -6,7 +6,6 @@
 //
 
 @testable import TMDBViewer
-import ObjectiveC
 
 final class HomeRouterSpy {
     var routeToMovieDetailCalled = false

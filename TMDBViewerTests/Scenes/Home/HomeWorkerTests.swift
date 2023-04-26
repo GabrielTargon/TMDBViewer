@@ -8,6 +8,7 @@
 import XCTest
 
 class HomeWorkerTests: XCTestCase {
+    
     // MARK: Subject under test
     var sut: HomeWorker!
     
@@ -33,7 +34,7 @@ class HomeWorkerTests: XCTestCase {
     }
     
     // MARK: Tests
-    func testFetchMovies() {
+    func test_fetchMovies() {
         dataMock.expectedResult = .successJSON("MoviesResponse")
         let expectation = self.expectation(description: "Expect fetch list")
         

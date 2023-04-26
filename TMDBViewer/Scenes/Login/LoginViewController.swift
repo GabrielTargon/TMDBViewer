@@ -16,7 +16,7 @@ protocol LoginDisplayLogic: AnyObject {
 class LoginViewController: UIViewController, LoginDisplayLogic {
 
     var interactor: LoginBusinessLogic?
-    var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
+    var router: (LoginRoutingLogic & LoginDataPassing)?
     
     let loginView = LoginView()
     
@@ -39,9 +39,11 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
         let interactor = LoginInteractor()
         let presenter = LoginPresenter()
         let router = LoginRouter()
+        let worker = LoginWorker()
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter
+        interactor.worker = worker
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor

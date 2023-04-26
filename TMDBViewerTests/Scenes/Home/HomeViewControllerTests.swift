@@ -40,29 +40,20 @@ class HomeViewControllerTests: XCTestCase {
     }
     
     // MARK: Tests
-    
-    func testViewDidLoad() {
+    func test_viewDidLoad() {
         sut.loadViewIfNeeded()
         
         XCTAssertTrue(sut.view is HomeView)
         XCTAssertTrue(interactorSpy.requestMoviesListCalled)
     }
     
-    func testViewWillAppear() {
+    func test_viewWillAppear() {
         sut.viewWillAppear(true)
         
         XCTAssertFalse(((sut.navigationController?.navigationBar.isTranslucent) != nil))
     }
     
-//    func testDisplayMovies() {
-//        let seed = HomeSeeds.movies
-//
-//        sut.displayMovies(viewModel: Home.Movies.ViewModel(movies: seed))
-//
-//
-//    }
-    
-    func testDisplayError() {
+    func test_displayError() {
         sut.displayError(description: "Test")
 
         XCTAssertTrue(routerSpy.routeToErrorCalled)

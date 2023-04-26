@@ -5,9 +5,11 @@
 //  Created by Gabriel Targon on 24/04/23.
 //
 
+@testable import TMDBViewer
+
 enum WorkerSpyResultType {
     case success
-    case failure
+    case failure(errorType: NetworkError)
 }
 
 class MockWorker {

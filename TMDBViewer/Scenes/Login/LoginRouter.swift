@@ -18,22 +18,31 @@ import UIKit
 }
 
 protocol LoginDataPassing {
-  var dataStore: LoginDataStore? { get }
+    var dataStore: LoginDataStore? { get }
 }
 
 class LoginRouter: NSObject, LoginRoutingLogic, LoginDataPassing {
-  weak var viewController: LoginViewController?
-  var dataStore: LoginDataStore?
-  
-  // MARK: Routing
-  
+    weak var viewController: UIViewController?
+    var dataStore: LoginDataStore?
+    var mainDispatchQueue: DispatchQueueType
+    
+    init(viewController: UIViewController? = nil,
+         dataStore: LoginDataStore? = nil,
+         mainDispatchQueue: DispatchQueueType = DispatchQueue.main) {
+        self.viewController = viewController
+        self.dataStore = dataStore
+        self.mainDispatchQueue = mainDispatchQueue
+    }
+    
+    // MARK: Routing
+    
     func routeToHome() {
         let nextViewController = HomeViewController()
         viewController?.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
     func routeToError(description: String) {
-        DispatchQueue.main.async {
+        mainDispatchQueue.async {
             let alert = UIAlertController(title: "Something went wrong",
                                           message: description,
                                           preferredStyle: .alert)

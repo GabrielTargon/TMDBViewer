@@ -8,6 +8,7 @@
 import XCTest
 
 class HomePresenterTests: XCTestCase {
+    
     // MARK: Subject under test
     var sut: HomePresenter!
     
@@ -36,9 +37,9 @@ class HomePresenterTests: XCTestCase {
         sut.viewController = viewControllerSpy
     }
     
-    // MARK: Test doubles
+    // MARK: Tests
     
-    func testPresentMovies() {
+    func test_presentMovies() {
         let seed = HomeSeeds.moviesResponseStub
         let response = Home.Movies.Response(movies: seed)
         
@@ -47,7 +48,7 @@ class HomePresenterTests: XCTestCase {
         XCTAssertTrue(viewControllerSpy.displayMoviesCalled)
     }
     
-    func testPresentError() {
+    func test_presentError() {
         sut.presentError(description: "Test")
         
         XCTAssertTrue(viewControllerSpy.displayErrorCalled)

@@ -26,7 +26,9 @@ class HomeRouter: HomeRoutingLogic, HomeDataPassing {
     var dataStore: HomeDataStore?
     var mainDispatchQueue: DispatchQueueType
     
-    init(viewController: UIViewController? = nil, dataStore: HomeDataStore? = nil, mainDispatchQueue: DispatchQueueType = DispatchQueue.main) {
+    init(viewController: UIViewController? = nil,
+         dataStore: HomeDataStore? = nil,
+         mainDispatchQueue: DispatchQueueType = DispatchQueue.main) {
         self.viewController = viewController
         self.dataStore = dataStore
         self.mainDispatchQueue = mainDispatchQueue

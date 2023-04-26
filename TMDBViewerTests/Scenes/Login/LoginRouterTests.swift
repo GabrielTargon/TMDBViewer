@@ -1,28 +1,26 @@
 //
-//  HomeRouterTests.swift
+//  LoginRouterTests.swift
 //  TMDBViewerTests
 //
-//  Created by Gabriel Targon on 23/04/23.
+//  Created by Gabriel Targon on 24/04/23.
 //
 
 @testable import TMDBViewer
 import XCTest
 
-class HomeRouterTests: XCTestCase {
+class LoginRouterTests: XCTestCase {
     
     // MARK: Subject under test
-    var sut: HomeRouter!
+    var sut: LoginRouter!
     
     // MARK: Doubles
-    private var viewControllerSpy: HomeViewControllerSpy!
+    private var viewControllerSpy: LoginViewControllerSpy!
     private var mockNavigationViewController: MockNavigationController!
     
-    
     // MARK: Test lifecycle
-    
     override func setUp() {
         super.setUp()
-        setupHomeRouter()
+        setupLoginRouter()
     }
     
     override func tearDown() {
@@ -34,9 +32,9 @@ class HomeRouterTests: XCTestCase {
     
     // MARK: Test setup
     
-    func setupHomeRouter() {
-        sut = HomeRouter()
-        viewControllerSpy = HomeViewControllerSpy()
+    func setupLoginRouter() {
+        sut = LoginRouter()
+        viewControllerSpy = LoginViewControllerSpy()
         mockNavigationViewController = MockNavigationController(rootViewController: viewControllerSpy)
         
         sut.viewController = viewControllerSpy
@@ -44,17 +42,17 @@ class HomeRouterTests: XCTestCase {
     
     // MARK: Tests
     
-    func test_routeToMovieDetail() {
-        sut.routeToMovieDetail(id: 1)
+    func test_routeToHome() {
+        sut.routeToHome()
         
-        XCTAssertTrue(mockNavigationViewController.pushedVC is DetailViewController)
+        XCTAssertTrue(mockNavigationViewController.pushedVC is HomeViewController)
     }
     
     func test_routeToError() {
         sut.mainDispatchQueue = MockDispatchQueue()
         
-        sut.routeToError(description: "Error Test")
-
+        sut.routeToError(description: "test")
+        
         XCTAssertTrue(mockNavigationViewController.presentedVC is UIAlertController)
     }
 }

@@ -15,6 +15,14 @@
 		B51F44C929AB0C2500A5FB47 /* HTTPRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */; };
 		B51F44CB29AB0C5000A5FB47 /* TMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */; };
 		B51F44CC29AD644000A5FB47 /* TMDBAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */; };
+		B55910ED29F7716A000428AD /* LoginViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910EC29F7716A000428AD /* LoginViewControllerSpy.swift */; };
+		B55910EF29F7717D000428AD /* LoginInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910EE29F7717D000428AD /* LoginInteractorSpy.swift */; };
+		B55910F129F7718B000428AD /* LoginRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910F029F7718B000428AD /* LoginRouterSpy.swift */; };
+		B55910F329F77196000428AD /* LoginWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910F229F77196000428AD /* LoginWorkerSpy.swift */; };
+		B55910F529F771A6000428AD /* LoginPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910F429F771A6000428AD /* LoginPresenterSpy.swift */; };
+		B55910F729F80CFC000428AD /* LoginSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910F629F80CFC000428AD /* LoginSeeds.swift */; };
+		B55910FD29F98CDC000428AD /* RequestToken.json in Resources */ = {isa = PBXBuildFile; fileRef = B55910FB29F98CDC000428AD /* RequestToken.json */; };
+		B55910FE29F98CDC000428AD /* Login.json in Resources */ = {isa = PBXBuildFile; fileRef = B55910FC29F98CDC000428AD /* Login.json */; };
 		B575638629F080E400BA4621 /* HomeInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575638529F080E400BA4621 /* HomeInteractorSpy.swift */; };
 		B575638829F0817200BA4621 /* HomeRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575638729F0817200BA4621 /* HomeRouterSpy.swift */; };
 		B57D564B29CFC31700EF75D1 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564729CFC31700EF75D1 /* HomeViewControllerTests.swift */; };
@@ -49,6 +57,11 @@
 		B5B7C4B2290778E70044C5B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B7C4B1290778E70044C5B4 /* Assets.xcassets */; };
 		B5B7C4B6290778E70044C5B4 /* TMDBWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B5B7C4A8290778E50044C5B4 /* TMDBWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B5B7C4BF2908A34C0044C5B4 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE91F62900DB4F00E8099A /* HomeModels.swift */; };
+		B5BF58DA29F76BA300A35DDE /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58D629F76BA300A35DDE /* LoginViewControllerTests.swift */; };
+		B5BF58DB29F76BA300A35DDE /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58D729F76BA300A35DDE /* LoginInteractorTests.swift */; };
+		B5BF58DC29F76BA300A35DDE /* LoginWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58D829F76BA300A35DDE /* LoginWorkerTests.swift */; };
+		B5BF58DD29F76BA300A35DDE /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58D929F76BA300A35DDE /* LoginPresenterTests.swift */; };
+		B5BF58E129F76F7100A35DDE /* LoginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58E029F76F7100A35DDE /* LoginRouterTests.swift */; };
 		B5C2E4A229A6A228009A0EF4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */; };
 		B5C2E4A429A6B5DB009A0EF4 /* HTTPRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */; };
 		B5C2E4A629A6CCC4009A0EF4 /* TMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */; };
@@ -127,6 +140,14 @@
 
 /* Begin PBXFileReference section */
 		B51F44C129A9419C00A5FB47 /* NetworkWidgetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWidgetService.swift; sourceTree = "<group>"; };
+		B55910EC29F7716A000428AD /* LoginViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSpy.swift; sourceTree = "<group>"; };
+		B55910EE29F7717D000428AD /* LoginInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorSpy.swift; sourceTree = "<group>"; };
+		B55910F029F7718B000428AD /* LoginRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterSpy.swift; sourceTree = "<group>"; };
+		B55910F229F77196000428AD /* LoginWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerSpy.swift; sourceTree = "<group>"; };
+		B55910F429F771A6000428AD /* LoginPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterSpy.swift; sourceTree = "<group>"; };
+		B55910F629F80CFC000428AD /* LoginSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSeeds.swift; sourceTree = "<group>"; };
+		B55910FB29F98CDC000428AD /* RequestToken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RequestToken.json; sourceTree = "<group>"; };
+		B55910FC29F98CDC000428AD /* Login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Login.json; sourceTree = "<group>"; };
 		B575638529F080E400BA4621 /* HomeInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorSpy.swift; sourceTree = "<group>"; };
 		B575638729F0817200BA4621 /* HomeRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterSpy.swift; sourceTree = "<group>"; };
 		B57D563D29CFC1AB00EF75D1 /* TMDBViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +183,11 @@
 		B5B7C4AF290778E50044C5B4 /* TMDBWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBWidget.swift; sourceTree = "<group>"; };
 		B5B7C4B1290778E70044C5B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B7C4B3290778E70044C5B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BF58D629F76BA300A35DDE /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		B5BF58D729F76BA300A35DDE /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		B5BF58D829F76BA300A35DDE /* LoginWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
+		B5BF58D929F76BA300A35DDE /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		B5BF58E029F76F7100A35DDE /* LoginRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
 		B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestParams.swift; sourceTree = "<group>"; };
 		B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBEndpoint.swift; sourceTree = "<group>"; };
@@ -250,9 +276,9 @@
 				B575638429F080BF00BA4621 /* Spies */,
 				B57D564729CFC31700EF75D1 /* HomeViewControllerTests.swift */,
 				B57D564829CFC31700EF75D1 /* HomeInteractorTests.swift */,
-				B57D564929CFC31700EF75D1 /* HomeWorkerTests.swift */,
 				B57D564A29CFC31700EF75D1 /* HomePresenterTests.swift */,
 				B5A7F36029F600E1004F5593 /* HomeRouterTests.swift */,
+				B57D564929CFC31700EF75D1 /* HomeWorkerTests.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -260,11 +286,11 @@
 		B575638429F080BF00BA4621 /* Spies */ = {
 			isa = PBXGroup;
 			children = (
-				B575638529F080E400BA4621 /* HomeInteractorSpy.swift */,
-				B575638729F0817200BA4621 /* HomeRouterSpy.swift */,
 				B589177A29F09ADA0034A6B8 /* HomeViewControllerSpy.swift */,
-				B5A7F35C29F5F964004F5593 /* HomeWorkerSpy.swift */,
+				B575638529F080E400BA4621 /* HomeInteractorSpy.swift */,
 				B5A7F35E29F5F975004F5593 /* HomePresenterSpy.swift */,
+				B575638729F0817200BA4621 /* HomeRouterSpy.swift */,
+				B5A7F35C29F5F964004F5593 /* HomeWorkerSpy.swift */,
 			);
 			path = Spies;
 			sourceTree = "<group>";
@@ -282,6 +308,7 @@
 		B57D564629CFC23400EF75D1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B5BF58D529F76B8900A35DDE /* Login */,
 				B575638329F080B700BA4621 /* Home */,
 			);
 			path = Scenes;
@@ -299,6 +326,8 @@
 			isa = PBXGroup;
 			children = (
 				B5A7F35829F591C1004F5593 /* MoviesResponse.json */,
+				B55910FC29F98CDC000428AD /* Login.json */,
+				B55910FB29F98CDC000428AD /* RequestToken.json */,
 			);
 			path = JSONs;
 			sourceTree = "<group>";
@@ -331,9 +360,9 @@
 				B5B7C4792904277C0044C5B4 /* Models */,
 				B5B7C46929035F9C0044C5B4 /* LoginViewController.swift */,
 				B5B7C46A29035F9C0044C5B4 /* LoginInteractor.swift */,
-				B5B7C47F290488AC0044C5B4 /* LoginWorker.swift */,
 				B5B7C46729035F9C0044C5B4 /* LoginPresenter.swift */,
 				B5B7C46829035F9C0044C5B4 /* LoginRouter.swift */,
+				B5B7C47F290488AC0044C5B4 /* LoginWorker.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -409,6 +438,40 @@
 				B5B7C4B3290778E70044C5B4 /* Info.plist */,
 			);
 			path = TMDBWidget;
+			sourceTree = "<group>";
+		};
+		B5BF58D529F76B8900A35DDE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B5BF58DF29F76BBF00A35DDE /* Seeds */,
+				B5BF58DE29F76BBA00A35DDE /* Spies */,
+				B5BF58D629F76BA300A35DDE /* LoginViewControllerTests.swift */,
+				B5BF58D729F76BA300A35DDE /* LoginInteractorTests.swift */,
+				B5BF58D929F76BA300A35DDE /* LoginPresenterTests.swift */,
+				B5BF58E029F76F7100A35DDE /* LoginRouterTests.swift */,
+				B5BF58D829F76BA300A35DDE /* LoginWorkerTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B5BF58DE29F76BBA00A35DDE /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				B55910EC29F7716A000428AD /* LoginViewControllerSpy.swift */,
+				B55910EE29F7717D000428AD /* LoginInteractorSpy.swift */,
+				B55910F429F771A6000428AD /* LoginPresenterSpy.swift */,
+				B55910F029F7718B000428AD /* LoginRouterSpy.swift */,
+				B55910F229F77196000428AD /* LoginWorkerSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		B5BF58DF29F76BBF00A35DDE /* Seeds */ = {
+			isa = PBXGroup;
+			children = (
+				B55910F629F80CFC000428AD /* LoginSeeds.swift */,
+			);
+			path = Seeds;
 			sourceTree = "<group>";
 		};
 		B5C2E4B129A8215B009A0EF4 /* TMDB API */ = {
@@ -501,9 +564,9 @@
 				B5B7C47B29042F0E0044C5B4 /* Models */,
 				B5FE91F12900DB4F00E8099A /* HomeViewController.swift */,
 				B5FE91EF2900DB4F00E8099A /* HomeInteractor.swift */,
-				B5FE91F52900DB4F00E8099A /* HomeWorker.swift */,
 				B5FE91F72900DB4F00E8099A /* HomePresenter.swift */,
 				B5FE91F22900DB4F00E8099A /* HomeRouter.swift */,
+				B5FE91F52900DB4F00E8099A /* HomeWorker.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -567,9 +630,9 @@
 				B5B7C47A29042F010044C5B4 /* Models */,
 				B5FE921B2901EBF400E8099A /* DetailViewController.swift */,
 				B5FE921C2901EBF400E8099A /* DetailInteractor.swift */,
-				B5FE92182901EBF400E8099A /* DetailWorker.swift */,
 				B5FE92172901EBF400E8099A /* DetailPresenter.swift */,
 				B5FE92192901EBF400E8099A /* DetailRouter.swift */,
+				B5FE92182901EBF400E8099A /* DetailWorker.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -688,7 +751,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55910FE29F98CDC000428AD /* Login.json in Resources */,
 				B5A7F35929F591C1004F5593 /* MoviesResponse.json in Resources */,
+				B55910FD29F98CDC000428AD /* RequestToken.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,8 +782,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BF58DA29F76BA300A35DDE /* LoginViewControllerTests.swift in Sources */,
+				B5BF58DD29F76BA300A35DDE /* LoginPresenterTests.swift in Sources */,
 				B589177E29F09CB40034A6B8 /* HomeSeeds.swift in Sources */,
+				B55910EF29F7717D000428AD /* LoginInteractorSpy.swift in Sources */,
 				B5A7F36129F600E1004F5593 /* HomeRouterTests.swift in Sources */,
+				B5BF58DC29F76BA300A35DDE /* LoginWorkerTests.swift in Sources */,
+				B55910F329F77196000428AD /* LoginWorkerSpy.swift in Sources */,
 				B575638829F0817200BA4621 /* HomeRouterSpy.swift in Sources */,
 				B57D564C29CFC31700EF75D1 /* HomeInteractorTests.swift in Sources */,
 				B5A7F36D29F71A21004F5593 /* XCTestCase+Extension.swift in Sources */,
@@ -728,12 +798,18 @@
 				B57D564D29CFC31700EF75D1 /* HomeWorkerTests.swift in Sources */,
 				B57D564E29CFC31700EF75D1 /* HomePresenterTests.swift in Sources */,
 				B5A7F36429F6B519004F5593 /* MockViewController.swift in Sources */,
+				B5BF58E129F76F7100A35DDE /* LoginRouterTests.swift in Sources */,
 				B575638629F080E400BA4621 /* HomeInteractorSpy.swift in Sources */,
+				B5BF58DB29F76BA300A35DDE /* LoginInteractorTests.swift in Sources */,
 				B57D564B29CFC31700EF75D1 /* HomeViewControllerTests.swift in Sources */,
 				B5A7F35D29F5F964004F5593 /* HomeWorkerSpy.swift in Sources */,
 				B5A7F36B29F6D265004F5593 /* MockData.swift in Sources */,
+				B55910F129F7718B000428AD /* LoginRouterSpy.swift in Sources */,
+				B55910F529F771A6000428AD /* LoginPresenterSpy.swift in Sources */,
+				B55910F729F80CFC000428AD /* LoginSeeds.swift in Sources */,
 				B5A7F35F29F5F975004F5593 /* HomePresenterSpy.swift in Sources */,
 				B5A7F36929F6CE9E004F5593 /* MockWorker.swift in Sources */,
+				B55910ED29F7716A000428AD /* LoginViewControllerSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
