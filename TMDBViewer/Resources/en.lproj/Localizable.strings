@@ -9,7 +9,7 @@
 "login_username" = "Username";
 "login_password" = "Password";
 "login_button" = "Log in";
-"login_fast_button" = "Fast login (Public)";
+"login_fast_button" = "Guest";
 
 "home_title" = "Movies";
 "home_error_title" = "Something went wrong";

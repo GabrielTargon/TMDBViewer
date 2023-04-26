@@ -41,7 +41,7 @@ class HomeViewControllerTests: XCTestCase {
     
     // MARK: Tests
     func test_viewDidLoad() {
-        sut.loadViewIfNeeded()
+        sut.viewDidLoad()
         
         XCTAssertTrue(sut.view is HomeView)
         XCTAssertTrue(interactorSpy.requestMoviesListCalled)

@@ -52,7 +52,6 @@ class HomeInteractorTests: XCTestCase {
     
     func test_requestMoviesList_Failure() {
         workerSpy.resultType = .failure(errorType: .unknown)
-        
         let seed = HomeSeeds.endpointStub
         let request = Home.Movies.Request(endpoint: seed)
         

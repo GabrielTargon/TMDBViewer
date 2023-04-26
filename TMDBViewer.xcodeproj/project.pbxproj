@@ -23,6 +23,18 @@
 		B55910F729F80CFC000428AD /* LoginSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910F629F80CFC000428AD /* LoginSeeds.swift */; };
 		B55910FD29F98CDC000428AD /* RequestToken.json in Resources */ = {isa = PBXBuildFile; fileRef = B55910FB29F98CDC000428AD /* RequestToken.json */; };
 		B55910FE29F98CDC000428AD /* Login.json in Resources */ = {isa = PBXBuildFile; fileRef = B55910FC29F98CDC000428AD /* Login.json */; };
+		B559110429F9AD83000428AD /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110029F9AD83000428AD /* DetailViewControllerTests.swift */; };
+		B559110529F9AD83000428AD /* DetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110129F9AD83000428AD /* DetailInteractorTests.swift */; };
+		B559110629F9AD83000428AD /* DetailWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110229F9AD83000428AD /* DetailWorkerTests.swift */; };
+		B559110729F9AD83000428AD /* DetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110329F9AD83000428AD /* DetailPresenterTests.swift */; };
+		B559110B29F9AE1F000428AD /* DetailInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110A29F9AE1F000428AD /* DetailInteractorSpy.swift */; };
+		B559110D29F9AE2C000428AD /* DetailViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110C29F9AE2C000428AD /* DetailViewControllerSpy.swift */; };
+		B559110F29F9AE3D000428AD /* DetailPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110E29F9AE3D000428AD /* DetailPresenterSpy.swift */; };
+		B559111129F9AE4D000428AD /* DetailRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559111029F9AE4D000428AD /* DetailRouterSpy.swift */; };
+		B559111329F9AE5A000428AD /* DetailWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559111229F9AE5A000428AD /* DetailWorkerSpy.swift */; };
+		B559111529F9AE8F000428AD /* DetailSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559111429F9AE8F000428AD /* DetailSeeds.swift */; };
+		B559111729F9AEF8000428AD /* DetailRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559111629F9AEF8000428AD /* DetailRouterTests.swift */; };
+		B559111A29F9C7F0000428AD /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = B559111929F9C7F0000428AD /* Movie.json */; };
 		B575638629F080E400BA4621 /* HomeInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575638529F080E400BA4621 /* HomeInteractorSpy.swift */; };
 		B575638829F0817200BA4621 /* HomeRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575638729F0817200BA4621 /* HomeRouterSpy.swift */; };
 		B57D564B29CFC31700EF75D1 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564729CFC31700EF75D1 /* HomeViewControllerTests.swift */; };
@@ -148,6 +160,18 @@
 		B55910F629F80CFC000428AD /* LoginSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSeeds.swift; sourceTree = "<group>"; };
 		B55910FB29F98CDC000428AD /* RequestToken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RequestToken.json; sourceTree = "<group>"; };
 		B55910FC29F98CDC000428AD /* Login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Login.json; sourceTree = "<group>"; };
+		B559110029F9AD83000428AD /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		B559110129F9AD83000428AD /* DetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorTests.swift; sourceTree = "<group>"; };
+		B559110229F9AD83000428AD /* DetailWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorkerTests.swift; sourceTree = "<group>"; };
+		B559110329F9AD83000428AD /* DetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTests.swift; sourceTree = "<group>"; };
+		B559110A29F9AE1F000428AD /* DetailInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorSpy.swift; sourceTree = "<group>"; };
+		B559110C29F9AE2C000428AD /* DetailViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerSpy.swift; sourceTree = "<group>"; };
+		B559110E29F9AE3D000428AD /* DetailPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterSpy.swift; sourceTree = "<group>"; };
+		B559111029F9AE4D000428AD /* DetailRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouterSpy.swift; sourceTree = "<group>"; };
+		B559111229F9AE5A000428AD /* DetailWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorkerSpy.swift; sourceTree = "<group>"; };
+		B559111429F9AE8F000428AD /* DetailSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSeeds.swift; sourceTree = "<group>"; };
+		B559111629F9AEF8000428AD /* DetailRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouterTests.swift; sourceTree = "<group>"; };
+		B559111929F9C7F0000428AD /* Movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
 		B575638529F080E400BA4621 /* HomeInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorSpy.swift; sourceTree = "<group>"; };
 		B575638729F0817200BA4621 /* HomeRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterSpy.swift; sourceTree = "<group>"; };
 		B57D563D29CFC1AB00EF75D1 /* TMDBViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +293,40 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		B55910FF29F9AD5E000428AD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B559110829F9AD8A000428AD /* Seeds */,
+				B559110929F9AD90000428AD /* Spies */,
+				B559110029F9AD83000428AD /* DetailViewControllerTests.swift */,
+				B559110129F9AD83000428AD /* DetailInteractorTests.swift */,
+				B559110329F9AD83000428AD /* DetailPresenterTests.swift */,
+				B559111629F9AEF8000428AD /* DetailRouterTests.swift */,
+				B559110229F9AD83000428AD /* DetailWorkerTests.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		B559110829F9AD8A000428AD /* Seeds */ = {
+			isa = PBXGroup;
+			children = (
+				B559111429F9AE8F000428AD /* DetailSeeds.swift */,
+			);
+			path = Seeds;
+			sourceTree = "<group>";
+		};
+		B559110929F9AD90000428AD /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				B559110C29F9AE2C000428AD /* DetailViewControllerSpy.swift */,
+				B559110A29F9AE1F000428AD /* DetailInteractorSpy.swift */,
+				B559110E29F9AE3D000428AD /* DetailPresenterSpy.swift */,
+				B559111029F9AE4D000428AD /* DetailRouterSpy.swift */,
+				B559111229F9AE5A000428AD /* DetailWorkerSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
 		B575638329F080B700BA4621 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +368,7 @@
 			children = (
 				B5BF58D529F76B8900A35DDE /* Login */,
 				B575638329F080B700BA4621 /* Home */,
+				B55910FF29F9AD5E000428AD /* Detail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -328,6 +387,7 @@
 				B5A7F35829F591C1004F5593 /* MoviesResponse.json */,
 				B55910FC29F98CDC000428AD /* Login.json */,
 				B55910FB29F98CDC000428AD /* RequestToken.json */,
+				B559111929F9C7F0000428AD /* Movie.json */,
 			);
 			path = JSONs;
 			sourceTree = "<group>";
@@ -753,6 +813,7 @@
 			files = (
 				B55910FE29F98CDC000428AD /* Login.json in Resources */,
 				B5A7F35929F591C1004F5593 /* MoviesResponse.json in Resources */,
+				B559111A29F9C7F0000428AD /* Movie.json in Resources */,
 				B55910FD29F98CDC000428AD /* RequestToken.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -782,11 +843,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B559110F29F9AE3D000428AD /* DetailPresenterSpy.swift in Sources */,
+				B559110D29F9AE2C000428AD /* DetailViewControllerSpy.swift in Sources */,
 				B5BF58DA29F76BA300A35DDE /* LoginViewControllerTests.swift in Sources */,
+				B559111729F9AEF8000428AD /* DetailRouterTests.swift in Sources */,
 				B5BF58DD29F76BA300A35DDE /* LoginPresenterTests.swift in Sources */,
+				B559110B29F9AE1F000428AD /* DetailInteractorSpy.swift in Sources */,
 				B589177E29F09CB40034A6B8 /* HomeSeeds.swift in Sources */,
 				B55910EF29F7717D000428AD /* LoginInteractorSpy.swift in Sources */,
 				B5A7F36129F600E1004F5593 /* HomeRouterTests.swift in Sources */,
+				B559111129F9AE4D000428AD /* DetailRouterSpy.swift in Sources */,
+				B559110529F9AD83000428AD /* DetailInteractorTests.swift in Sources */,
 				B5BF58DC29F76BA300A35DDE /* LoginWorkerTests.swift in Sources */,
 				B55910F329F77196000428AD /* LoginWorkerSpy.swift in Sources */,
 				B575638829F0817200BA4621 /* HomeRouterSpy.swift in Sources */,
@@ -800,12 +867,17 @@
 				B5A7F36429F6B519004F5593 /* MockViewController.swift in Sources */,
 				B5BF58E129F76F7100A35DDE /* LoginRouterTests.swift in Sources */,
 				B575638629F080E400BA4621 /* HomeInteractorSpy.swift in Sources */,
+				B559111529F9AE8F000428AD /* DetailSeeds.swift in Sources */,
+				B559110729F9AD83000428AD /* DetailPresenterTests.swift in Sources */,
 				B5BF58DB29F76BA300A35DDE /* LoginInteractorTests.swift in Sources */,
 				B57D564B29CFC31700EF75D1 /* HomeViewControllerTests.swift in Sources */,
 				B5A7F35D29F5F964004F5593 /* HomeWorkerSpy.swift in Sources */,
 				B5A7F36B29F6D265004F5593 /* MockData.swift in Sources */,
 				B55910F129F7718B000428AD /* LoginRouterSpy.swift in Sources */,
+				B559111329F9AE5A000428AD /* DetailWorkerSpy.swift in Sources */,
+				B559110429F9AD83000428AD /* DetailViewControllerTests.swift in Sources */,
 				B55910F529F771A6000428AD /* LoginPresenterSpy.swift in Sources */,
+				B559110629F9AD83000428AD /* DetailWorkerTests.swift in Sources */,
 				B55910F729F80CFC000428AD /* LoginSeeds.swift in Sources */,
 				B5A7F35F29F5F975004F5593 /* HomePresenterSpy.swift in Sources */,
 				B5A7F36929F6CE9E004F5593 /* MockWorker.swift in Sources */,

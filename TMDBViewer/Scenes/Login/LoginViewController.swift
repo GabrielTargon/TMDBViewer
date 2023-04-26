@@ -1,6 +1,8 @@
 //
-//  LoginSceneViewController.swift
+//  LoginViewController.swift
 //  TMDBViewer
+//
+//  Created by Gabriel Targon on 22/10/22.
 //
 
 import UIKit

@@ -9,7 +9,7 @@
 "login_username" = "Usuário";
 "login_password" = "Senha";
 "login_button" = "Entrar";
-"login_fast_button" = "Login rápido (Público)";
+"login_fast_button" = "Convidado";
 
 "home_title" = "Filmes";
 "home_error_title" = "Algo errado aconteceu";
