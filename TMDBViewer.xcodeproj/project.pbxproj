@@ -13,9 +13,48 @@
 		B51F44C729A9460900A5FB47 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */; };
 		B51F44C829AB0C2200A5FB47 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */; };
 		B51F44C929AB0C2500A5FB47 /* HTTPRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */; };
-		B51F44CA29AB0C2900A5FB47 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */; };
 		B51F44CB29AB0C5000A5FB47 /* TMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */; };
 		B51F44CC29AD644000A5FB47 /* TMDBAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */; };
+		B55910ED29F7716A000428AD /* LoginViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910EC29F7716A000428AD /* LoginViewControllerSpy.swift */; };
+		B55910EF29F7717D000428AD /* LoginInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910EE29F7717D000428AD /* LoginInteractorSpy.swift */; };
+		B55910F129F7718B000428AD /* LoginRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910F029F7718B000428AD /* LoginRouterSpy.swift */; };
+		B55910F329F77196000428AD /* LoginWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910F229F77196000428AD /* LoginWorkerSpy.swift */; };
+		B55910F529F771A6000428AD /* LoginPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910F429F771A6000428AD /* LoginPresenterSpy.swift */; };
+		B55910F729F80CFC000428AD /* LoginSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55910F629F80CFC000428AD /* LoginSeeds.swift */; };
+		B55910FD29F98CDC000428AD /* RequestToken.json in Resources */ = {isa = PBXBuildFile; fileRef = B55910FB29F98CDC000428AD /* RequestToken.json */; };
+		B55910FE29F98CDC000428AD /* Login.json in Resources */ = {isa = PBXBuildFile; fileRef = B55910FC29F98CDC000428AD /* Login.json */; };
+		B559110429F9AD83000428AD /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110029F9AD83000428AD /* DetailViewControllerTests.swift */; };
+		B559110529F9AD83000428AD /* DetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110129F9AD83000428AD /* DetailInteractorTests.swift */; };
+		B559110629F9AD83000428AD /* DetailWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110229F9AD83000428AD /* DetailWorkerTests.swift */; };
+		B559110729F9AD83000428AD /* DetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110329F9AD83000428AD /* DetailPresenterTests.swift */; };
+		B559110B29F9AE1F000428AD /* DetailInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110A29F9AE1F000428AD /* DetailInteractorSpy.swift */; };
+		B559110D29F9AE2C000428AD /* DetailViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110C29F9AE2C000428AD /* DetailViewControllerSpy.swift */; };
+		B559110F29F9AE3D000428AD /* DetailPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559110E29F9AE3D000428AD /* DetailPresenterSpy.swift */; };
+		B559111129F9AE4D000428AD /* DetailRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559111029F9AE4D000428AD /* DetailRouterSpy.swift */; };
+		B559111329F9AE5A000428AD /* DetailWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559111229F9AE5A000428AD /* DetailWorkerSpy.swift */; };
+		B559111529F9AE8F000428AD /* DetailSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559111429F9AE8F000428AD /* DetailSeeds.swift */; };
+		B559111729F9AEF8000428AD /* DetailRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559111629F9AEF8000428AD /* DetailRouterTests.swift */; };
+		B559111A29F9C7F0000428AD /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = B559111929F9C7F0000428AD /* Movie.json */; };
+		B575638629F080E400BA4621 /* HomeInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575638529F080E400BA4621 /* HomeInteractorSpy.swift */; };
+		B575638829F0817200BA4621 /* HomeRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575638729F0817200BA4621 /* HomeRouterSpy.swift */; };
+		B57D564B29CFC31700EF75D1 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564729CFC31700EF75D1 /* HomeViewControllerTests.swift */; };
+		B57D564C29CFC31700EF75D1 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564829CFC31700EF75D1 /* HomeInteractorTests.swift */; };
+		B57D564D29CFC31700EF75D1 /* HomeWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564929CFC31700EF75D1 /* HomeWorkerTests.swift */; };
+		B57D564E29CFC31700EF75D1 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D564A29CFC31700EF75D1 /* HomePresenterTests.swift */; };
+		B589177B29F09ADA0034A6B8 /* HomeViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589177A29F09ADA0034A6B8 /* HomeViewControllerSpy.swift */; };
+		B589177E29F09CB40034A6B8 /* HomeSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589177D29F09CB40034A6B8 /* HomeSeeds.swift */; };
+		B5A7F35929F591C1004F5593 /* MoviesResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B5A7F35829F591C1004F5593 /* MoviesResponse.json */; };
+		B5A7F35B29F595D9004F5593 /* GenericDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F35A29F595D9004F5593 /* GenericDecoder.swift */; };
+		B5A7F35D29F5F964004F5593 /* HomeWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F35C29F5F964004F5593 /* HomeWorkerSpy.swift */; };
+		B5A7F35F29F5F975004F5593 /* HomePresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F35E29F5F975004F5593 /* HomePresenterSpy.swift */; };
+		B5A7F36129F600E1004F5593 /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36029F600E1004F5593 /* HomeRouterTests.swift */; };
+		B5A7F36429F6B519004F5593 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36329F6B519004F5593 /* MockViewController.swift */; };
+		B5A7F36629F6B838004F5593 /* MockNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36529F6B838004F5593 /* MockNavigationController.swift */; };
+		B5A7F36929F6CE9E004F5593 /* MockWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36829F6CE9E004F5593 /* MockWorker.swift */; };
+		B5A7F36B29F6D265004F5593 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36A29F6D265004F5593 /* MockData.swift */; };
+		B5A7F36D29F71A21004F5593 /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36C29F71A21004F5593 /* XCTestCase+Extension.swift */; };
+		B5A7F37029F7473A004F5593 /* MockDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F36F29F7473A004F5593 /* MockDispatchQueue.swift */; };
+		B5A7F37229F74781004F5593 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7F37129F74781004F5593 /* DispatchQueue+Extension.swift */; };
 		B5B7C46D29035F9C0044C5B4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46729035F9C0044C5B4 /* LoginPresenter.swift */; };
 		B5B7C46E29035F9C0044C5B4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46829035F9C0044C5B4 /* LoginRouter.swift */; };
 		B5B7C46F29035F9C0044C5B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7C46929035F9C0044C5B4 /* LoginViewController.swift */; };
@@ -30,13 +69,16 @@
 		B5B7C4B2290778E70044C5B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B7C4B1290778E70044C5B4 /* Assets.xcassets */; };
 		B5B7C4B6290778E70044C5B4 /* TMDBWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B5B7C4A8290778E50044C5B4 /* TMDBWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B5B7C4BF2908A34C0044C5B4 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE91F62900DB4F00E8099A /* HomeModels.swift */; };
+		B5BF58DA29F76BA300A35DDE /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58D629F76BA300A35DDE /* LoginViewControllerTests.swift */; };
+		B5BF58DB29F76BA300A35DDE /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58D729F76BA300A35DDE /* LoginInteractorTests.swift */; };
+		B5BF58DC29F76BA300A35DDE /* LoginWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58D829F76BA300A35DDE /* LoginWorkerTests.swift */; };
+		B5BF58DD29F76BA300A35DDE /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58D929F76BA300A35DDE /* LoginPresenterTests.swift */; };
+		B5BF58E129F76F7100A35DDE /* LoginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BF58E029F76F7100A35DDE /* LoginRouterTests.swift */; };
 		B5C2E4A229A6A228009A0EF4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */; };
 		B5C2E4A429A6B5DB009A0EF4 /* HTTPRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */; };
 		B5C2E4A629A6CCC4009A0EF4 /* TMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */; };
 		B5C2E4A829A6D05C009A0EF4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */; };
 		B5C2E4AA29A6D18B009A0EF4 /* TMDBAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */; };
-		B5C2E4AC29A6E249009A0EF4 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */; };
-		B5C2E4AE29A7E48C009A0EF4 /* TMDBFetchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4AD29A7E48C009A0EF4 /* TMDBFetchResponse.swift */; };
 		B5C2E4B429A86120009A0EF4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */; };
 		B5C2E4B529A8619B009A0EF4 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */; };
 		B5C2E4B729A86228009A0EF4 /* Color+Pallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2E4B629A86228009A0EF4 /* Color+Pallet.swift */; };
@@ -78,6 +120,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B57D564129CFC1AB00EF75D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE91CE2900DAEF00E8099A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FE91D52900DAEF00E8099A;
+			remoteInfo = TMDBViewer;
+		};
 		B5B7C4B4290778E70044C5B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5FE91CE2900DAEF00E8099A /* Project object */;
@@ -103,6 +152,47 @@
 
 /* Begin PBXFileReference section */
 		B51F44C129A9419C00A5FB47 /* NetworkWidgetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWidgetService.swift; sourceTree = "<group>"; };
+		B55910EC29F7716A000428AD /* LoginViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSpy.swift; sourceTree = "<group>"; };
+		B55910EE29F7717D000428AD /* LoginInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorSpy.swift; sourceTree = "<group>"; };
+		B55910F029F7718B000428AD /* LoginRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterSpy.swift; sourceTree = "<group>"; };
+		B55910F229F77196000428AD /* LoginWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerSpy.swift; sourceTree = "<group>"; };
+		B55910F429F771A6000428AD /* LoginPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterSpy.swift; sourceTree = "<group>"; };
+		B55910F629F80CFC000428AD /* LoginSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSeeds.swift; sourceTree = "<group>"; };
+		B55910FB29F98CDC000428AD /* RequestToken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RequestToken.json; sourceTree = "<group>"; };
+		B55910FC29F98CDC000428AD /* Login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Login.json; sourceTree = "<group>"; };
+		B559110029F9AD83000428AD /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		B559110129F9AD83000428AD /* DetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorTests.swift; sourceTree = "<group>"; };
+		B559110229F9AD83000428AD /* DetailWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorkerTests.swift; sourceTree = "<group>"; };
+		B559110329F9AD83000428AD /* DetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTests.swift; sourceTree = "<group>"; };
+		B559110A29F9AE1F000428AD /* DetailInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorSpy.swift; sourceTree = "<group>"; };
+		B559110C29F9AE2C000428AD /* DetailViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerSpy.swift; sourceTree = "<group>"; };
+		B559110E29F9AE3D000428AD /* DetailPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterSpy.swift; sourceTree = "<group>"; };
+		B559111029F9AE4D000428AD /* DetailRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouterSpy.swift; sourceTree = "<group>"; };
+		B559111229F9AE5A000428AD /* DetailWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorkerSpy.swift; sourceTree = "<group>"; };
+		B559111429F9AE8F000428AD /* DetailSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSeeds.swift; sourceTree = "<group>"; };
+		B559111629F9AEF8000428AD /* DetailRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouterTests.swift; sourceTree = "<group>"; };
+		B559111929F9C7F0000428AD /* Movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
+		B575638529F080E400BA4621 /* HomeInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorSpy.swift; sourceTree = "<group>"; };
+		B575638729F0817200BA4621 /* HomeRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterSpy.swift; sourceTree = "<group>"; };
+		B57D563D29CFC1AB00EF75D1 /* TMDBViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57D564729CFC31700EF75D1 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		B57D564829CFC31700EF75D1 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		B57D564929CFC31700EF75D1 /* HomeWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkerTests.swift; sourceTree = "<group>"; };
+		B57D564A29CFC31700EF75D1 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		B589177A29F09ADA0034A6B8 /* HomeViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerSpy.swift; sourceTree = "<group>"; };
+		B589177D29F09CB40034A6B8 /* HomeSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSeeds.swift; sourceTree = "<group>"; };
+		B5A7F35829F591C1004F5593 /* MoviesResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MoviesResponse.json; sourceTree = "<group>"; };
+		B5A7F35A29F595D9004F5593 /* GenericDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDecoder.swift; sourceTree = "<group>"; };
+		B5A7F35C29F5F964004F5593 /* HomeWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkerSpy.swift; sourceTree = "<group>"; };
+		B5A7F35E29F5F975004F5593 /* HomePresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterSpy.swift; sourceTree = "<group>"; };
+		B5A7F36029F600E1004F5593 /* HomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterTests.swift; sourceTree = "<group>"; };
+		B5A7F36329F6B519004F5593 /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
+		B5A7F36529F6B838004F5593 /* MockNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNavigationController.swift; sourceTree = "<group>"; };
+		B5A7F36829F6CE9E004F5593 /* MockWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWorker.swift; sourceTree = "<group>"; };
+		B5A7F36A29F6D265004F5593 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B5A7F36C29F71A21004F5593 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
+		B5A7F36F29F7473A004F5593 /* MockDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDispatchQueue.swift; sourceTree = "<group>"; };
+		B5A7F37129F74781004F5593 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
 		B5B7C46729035F9C0044C5B4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		B5B7C46829035F9C0044C5B4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		B5B7C46929035F9C0044C5B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -117,13 +207,16 @@
 		B5B7C4AF290778E50044C5B4 /* TMDBWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBWidget.swift; sourceTree = "<group>"; };
 		B5B7C4B1290778E70044C5B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B7C4B3290778E70044C5B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BF58D629F76BA300A35DDE /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		B5BF58D729F76BA300A35DDE /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		B5BF58D829F76BA300A35DDE /* LoginWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
+		B5BF58D929F76BA300A35DDE /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		B5BF58E029F76F7100A35DDE /* LoginRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
 		B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestParams.swift; sourceTree = "<group>"; };
 		B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBEndpoint.swift; sourceTree = "<group>"; };
 		B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIConstants.swift; sourceTree = "<group>"; };
-		B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
-		B5C2E4AD29A7E48C009A0EF4 /* TMDBFetchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBFetchResponse.swift; sourceTree = "<group>"; };
 		B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		B5C2E4B629A86228009A0EF4 /* Color+Pallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Pallet.swift"; sourceTree = "<group>"; };
 		B5D482F5294C04000079E962 /* TMDBSmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBSmallWidgetView.swift; sourceTree = "<group>"; };
@@ -164,6 +257,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B57D563A29CFC1AB00EF75D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5B7C4A5290778E50044C5B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +293,126 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		B55910FF29F9AD5E000428AD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B559110829F9AD8A000428AD /* Seeds */,
+				B559110929F9AD90000428AD /* Spies */,
+				B559110029F9AD83000428AD /* DetailViewControllerTests.swift */,
+				B559110129F9AD83000428AD /* DetailInteractorTests.swift */,
+				B559110329F9AD83000428AD /* DetailPresenterTests.swift */,
+				B559111629F9AEF8000428AD /* DetailRouterTests.swift */,
+				B559110229F9AD83000428AD /* DetailWorkerTests.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		B559110829F9AD8A000428AD /* Seeds */ = {
+			isa = PBXGroup;
+			children = (
+				B559111429F9AE8F000428AD /* DetailSeeds.swift */,
+			);
+			path = Seeds;
+			sourceTree = "<group>";
+		};
+		B559110929F9AD90000428AD /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				B559110C29F9AE2C000428AD /* DetailViewControllerSpy.swift */,
+				B559110A29F9AE1F000428AD /* DetailInteractorSpy.swift */,
+				B559110E29F9AE3D000428AD /* DetailPresenterSpy.swift */,
+				B559111029F9AE4D000428AD /* DetailRouterSpy.swift */,
+				B559111229F9AE5A000428AD /* DetailWorkerSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		B575638329F080B700BA4621 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B589177C29F09C8F0034A6B8 /* Seeds */,
+				B575638429F080BF00BA4621 /* Spies */,
+				B57D564729CFC31700EF75D1 /* HomeViewControllerTests.swift */,
+				B57D564829CFC31700EF75D1 /* HomeInteractorTests.swift */,
+				B57D564A29CFC31700EF75D1 /* HomePresenterTests.swift */,
+				B5A7F36029F600E1004F5593 /* HomeRouterTests.swift */,
+				B57D564929CFC31700EF75D1 /* HomeWorkerTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B575638429F080BF00BA4621 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				B589177A29F09ADA0034A6B8 /* HomeViewControllerSpy.swift */,
+				B575638529F080E400BA4621 /* HomeInteractorSpy.swift */,
+				B5A7F35E29F5F975004F5593 /* HomePresenterSpy.swift */,
+				B575638729F0817200BA4621 /* HomeRouterSpy.swift */,
+				B5A7F35C29F5F964004F5593 /* HomeWorkerSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		B57D563E29CFC1AB00EF75D1 /* TMDBViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B57D564629CFC23400EF75D1 /* Scenes */,
+				B5A7F35629F590C9004F5593 /* JSONs */,
+				B5A7F36229F6B50B004F5593 /* Support Files */,
+			);
+			path = TMDBViewerTests;
+			sourceTree = "<group>";
+		};
+		B57D564629CFC23400EF75D1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B5BF58D529F76B8900A35DDE /* Login */,
+				B575638329F080B700BA4621 /* Home */,
+				B55910FF29F9AD5E000428AD /* Detail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B589177C29F09C8F0034A6B8 /* Seeds */ = {
+			isa = PBXGroup;
+			children = (
+				B589177D29F09CB40034A6B8 /* HomeSeeds.swift */,
+			);
+			path = Seeds;
+			sourceTree = "<group>";
+		};
+		B5A7F35629F590C9004F5593 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				B5A7F35829F591C1004F5593 /* MoviesResponse.json */,
+				B55910FC29F98CDC000428AD /* Login.json */,
+				B55910FB29F98CDC000428AD /* RequestToken.json */,
+				B559111929F9C7F0000428AD /* Movie.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
+		B5A7F36229F6B50B004F5593 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5A7F36729F6B840004F5593 /* Mock */,
+				B5A7F36C29F71A21004F5593 /* XCTestCase+Extension.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		B5A7F36729F6B840004F5593 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B5A7F36329F6B519004F5593 /* MockViewController.swift */,
+				B5A7F36529F6B838004F5593 /* MockNavigationController.swift */,
+				B5A7F36829F6CE9E004F5593 /* MockWorker.swift */,
+				B5A7F36A29F6D265004F5593 /* MockData.swift */,
+				B5A7F36F29F7473A004F5593 /* MockDispatchQueue.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		B5B7C46629035F870044C5B4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,9 +420,9 @@
 				B5B7C4792904277C0044C5B4 /* Models */,
 				B5B7C46929035F9C0044C5B4 /* LoginViewController.swift */,
 				B5B7C46A29035F9C0044C5B4 /* LoginInteractor.swift */,
-				B5B7C47F290488AC0044C5B4 /* LoginWorker.swift */,
 				B5B7C46729035F9C0044C5B4 /* LoginPresenter.swift */,
 				B5B7C46829035F9C0044C5B4 /* LoginRouter.swift */,
+				B5B7C47F290488AC0044C5B4 /* LoginWorker.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -280,12 +500,45 @@
 			path = TMDBWidget;
 			sourceTree = "<group>";
 		};
+		B5BF58D529F76B8900A35DDE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B5BF58DF29F76BBF00A35DDE /* Seeds */,
+				B5BF58DE29F76BBA00A35DDE /* Spies */,
+				B5BF58D629F76BA300A35DDE /* LoginViewControllerTests.swift */,
+				B5BF58D729F76BA300A35DDE /* LoginInteractorTests.swift */,
+				B5BF58D929F76BA300A35DDE /* LoginPresenterTests.swift */,
+				B5BF58E029F76F7100A35DDE /* LoginRouterTests.swift */,
+				B5BF58D829F76BA300A35DDE /* LoginWorkerTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B5BF58DE29F76BBA00A35DDE /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				B55910EC29F7716A000428AD /* LoginViewControllerSpy.swift */,
+				B55910EE29F7717D000428AD /* LoginInteractorSpy.swift */,
+				B55910F429F771A6000428AD /* LoginPresenterSpy.swift */,
+				B55910F029F7718B000428AD /* LoginRouterSpy.swift */,
+				B55910F229F77196000428AD /* LoginWorkerSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		B5BF58DF29F76BBF00A35DDE /* Seeds */ = {
+			isa = PBXGroup;
+			children = (
+				B55910F629F80CFC000428AD /* LoginSeeds.swift */,
+			);
+			path = Seeds;
+			sourceTree = "<group>";
+		};
 		B5C2E4B129A8215B009A0EF4 /* TMDB API */ = {
 			isa = PBXGroup;
 			children = (
 				B5C2E4A529A6CCC4009A0EF4 /* TMDBEndpoint.swift */,
 				B5C2E4A929A6D18B009A0EF4 /* TMDBAPIConstants.swift */,
-				B5C2E4AD29A7E48C009A0EF4 /* TMDBFetchResponse.swift */,
 			);
 			path = "TMDB API";
 			sourceTree = "<group>";
@@ -320,6 +573,7 @@
 			children = (
 				B5FE91D82900DAEF00E8099A /* TMDBViewer */,
 				B5B7C4AE290778E50044C5B4 /* TMDBWidget */,
+				B57D563E29CFC1AB00EF75D1 /* TMDBViewerTests */,
 				B5B7C4A9290778E50044C5B4 /* Frameworks */,
 				B5FE91D72900DAEF00E8099A /* Products */,
 			);
@@ -330,6 +584,7 @@
 			children = (
 				B5FE91D62900DAEF00E8099A /* TMDBViewer.app */,
 				B5B7C4A8290778E50044C5B4 /* TMDBWidgetExtension.appex */,
+				B57D563D29CFC1AB00EF75D1 /* TMDBViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,9 +624,9 @@
 				B5B7C47B29042F0E0044C5B4 /* Models */,
 				B5FE91F12900DB4F00E8099A /* HomeViewController.swift */,
 				B5FE91EF2900DB4F00E8099A /* HomeInteractor.swift */,
-				B5FE91F52900DB4F00E8099A /* HomeWorker.swift */,
 				B5FE91F72900DB4F00E8099A /* HomePresenter.swift */,
 				B5FE91F22900DB4F00E8099A /* HomeRouter.swift */,
+				B5FE91F52900DB4F00E8099A /* HomeWorker.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -388,6 +643,7 @@
 			isa = PBXGroup;
 			children = (
 				B5FE91F92900DB4F00E8099A /* ViewCode.swift */,
+				B5A7F35A29F595D9004F5593 /* GenericDecoder.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -398,8 +654,8 @@
 				B5FE92082900DB5800E8099A /* Models */,
 				B5C2E4B129A8215B009A0EF4 /* TMDB API */,
 				B5C2E4A129A6A228009A0EF4 /* NetworkService.swift */,
+				B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */,
 				B5C2E4A329A6B5DB009A0EF4 /* HTTPRequestParams.swift */,
-				B5C2E4AB29A6E249009A0EF4 /* URLRequestConvertible.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -409,7 +665,6 @@
 			children = (
 				B5FE92092900DB5800E8099A /* Movie.swift */,
 				B5B7C49D2906A0C60044C5B4 /* MovieResponse.swift */,
-				B5C2E4A729A6D05C009A0EF4 /* NetworkError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -423,6 +678,7 @@
 				B5C2E4B329A86120009A0EF4 /* Color+Extension.swift */,
 				B5FE92142901E57400E8099A /* Date+Extension.swift */,
 				B5D48306294D118A0079E962 /* UIResponder+Extension.swift */,
+				B5A7F37129F74781004F5593 /* DispatchQueue+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -434,9 +690,9 @@
 				B5B7C47A29042F010044C5B4 /* Models */,
 				B5FE921B2901EBF400E8099A /* DetailViewController.swift */,
 				B5FE921C2901EBF400E8099A /* DetailInteractor.swift */,
-				B5FE92182901EBF400E8099A /* DetailWorker.swift */,
 				B5FE92172901EBF400E8099A /* DetailPresenter.swift */,
 				B5FE92192901EBF400E8099A /* DetailRouter.swift */,
+				B5FE92182901EBF400E8099A /* DetailWorker.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -444,6 +700,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B57D563C29CFC1AB00EF75D1 /* TMDBViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57D564329CFC1AB00EF75D1 /* Build configuration list for PBXNativeTarget "TMDBViewerTests" */;
+			buildPhases = (
+				B57D563929CFC1AB00EF75D1 /* Sources */,
+				B57D563A29CFC1AB00EF75D1 /* Frameworks */,
+				B57D563B29CFC1AB00EF75D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B57D564229CFC1AB00EF75D1 /* PBXTargetDependency */,
+			);
+			name = TMDBViewerTests;
+			productName = TMDBViewerTests;
+			productReference = B57D563D29CFC1AB00EF75D1 /* TMDBViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B5B7C4A7290778E50044C5B4 /* TMDBWidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5B7C4BA290778E80044C5B4 /* Build configuration list for PBXNativeTarget "TMDBWidgetExtension" */;
@@ -493,9 +767,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					B57D563C29CFC1AB00EF75D1 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B5FE91D52900DAEF00E8099A;
+					};
 					B5B7C4A7290778E50044C5B4 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -523,11 +801,23 @@
 			targets = (
 				B5FE91D52900DAEF00E8099A /* TMDBViewer */,
 				B5B7C4A7290778E50044C5B4 /* TMDBWidgetExtension */,
+				B57D563C29CFC1AB00EF75D1 /* TMDBViewerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B57D563B29CFC1AB00EF75D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55910FE29F98CDC000428AD /* Login.json in Resources */,
+				B5A7F35929F591C1004F5593 /* MoviesResponse.json in Resources */,
+				B559111A29F9C7F0000428AD /* Movie.json in Resources */,
+				B55910FD29F98CDC000428AD /* RequestToken.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5B7C4A6290778E50044C5B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,6 +839,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B57D563929CFC1AB00EF75D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B559110F29F9AE3D000428AD /* DetailPresenterSpy.swift in Sources */,
+				B559110D29F9AE2C000428AD /* DetailViewControllerSpy.swift in Sources */,
+				B5BF58DA29F76BA300A35DDE /* LoginViewControllerTests.swift in Sources */,
+				B559111729F9AEF8000428AD /* DetailRouterTests.swift in Sources */,
+				B5BF58DD29F76BA300A35DDE /* LoginPresenterTests.swift in Sources */,
+				B559110B29F9AE1F000428AD /* DetailInteractorSpy.swift in Sources */,
+				B589177E29F09CB40034A6B8 /* HomeSeeds.swift in Sources */,
+				B55910EF29F7717D000428AD /* LoginInteractorSpy.swift in Sources */,
+				B5A7F36129F600E1004F5593 /* HomeRouterTests.swift in Sources */,
+				B559111129F9AE4D000428AD /* DetailRouterSpy.swift in Sources */,
+				B559110529F9AD83000428AD /* DetailInteractorTests.swift in Sources */,
+				B5BF58DC29F76BA300A35DDE /* LoginWorkerTests.swift in Sources */,
+				B55910F329F77196000428AD /* LoginWorkerSpy.swift in Sources */,
+				B575638829F0817200BA4621 /* HomeRouterSpy.swift in Sources */,
+				B57D564C29CFC31700EF75D1 /* HomeInteractorTests.swift in Sources */,
+				B5A7F36D29F71A21004F5593 /* XCTestCase+Extension.swift in Sources */,
+				B589177B29F09ADA0034A6B8 /* HomeViewControllerSpy.swift in Sources */,
+				B5A7F36629F6B838004F5593 /* MockNavigationController.swift in Sources */,
+				B5A7F37029F7473A004F5593 /* MockDispatchQueue.swift in Sources */,
+				B57D564D29CFC31700EF75D1 /* HomeWorkerTests.swift in Sources */,
+				B57D564E29CFC31700EF75D1 /* HomePresenterTests.swift in Sources */,
+				B5A7F36429F6B519004F5593 /* MockViewController.swift in Sources */,
+				B5BF58E129F76F7100A35DDE /* LoginRouterTests.swift in Sources */,
+				B575638629F080E400BA4621 /* HomeInteractorSpy.swift in Sources */,
+				B559111529F9AE8F000428AD /* DetailSeeds.swift in Sources */,
+				B559110729F9AD83000428AD /* DetailPresenterTests.swift in Sources */,
+				B5BF58DB29F76BA300A35DDE /* LoginInteractorTests.swift in Sources */,
+				B57D564B29CFC31700EF75D1 /* HomeViewControllerTests.swift in Sources */,
+				B5A7F35D29F5F964004F5593 /* HomeWorkerSpy.swift in Sources */,
+				B5A7F36B29F6D265004F5593 /* MockData.swift in Sources */,
+				B55910F129F7718B000428AD /* LoginRouterSpy.swift in Sources */,
+				B559111329F9AE5A000428AD /* DetailWorkerSpy.swift in Sources */,
+				B559110429F9AD83000428AD /* DetailViewControllerTests.swift in Sources */,
+				B55910F529F771A6000428AD /* LoginPresenterSpy.swift in Sources */,
+				B559110629F9AD83000428AD /* DetailWorkerTests.swift in Sources */,
+				B55910F729F80CFC000428AD /* LoginSeeds.swift in Sources */,
+				B5A7F35F29F5F975004F5593 /* HomePresenterSpy.swift in Sources */,
+				B5A7F36929F6CE9E004F5593 /* MockWorker.swift in Sources */,
+				B55910ED29F7716A000428AD /* LoginViewControllerSpy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5B7C4A4290778E50044C5B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -557,7 +893,6 @@
 				B5C2E4B829A86270009A0EF4 /* Color+Pallet.swift in Sources */,
 				B51F44C929AB0C2500A5FB47 /* HTTPRequestParams.swift in Sources */,
 				B51F44C329A9443500A5FB47 /* NetworkWidgetService.swift in Sources */,
-				B51F44CA29AB0C2900A5FB47 /* URLRequestConvertible.swift in Sources */,
 				B5C2E4B529A8619B009A0EF4 /* Color+Extension.swift in Sources */,
 				B5B7C4BF2908A34C0044C5B4 /* HomeModels.swift in Sources */,
 				B5B7C4B0290778E50044C5B4 /* TMDBWidget.swift in Sources */,
@@ -580,8 +915,8 @@
 				B5B7C46F29035F9C0044C5B4 /* LoginViewController.swift in Sources */,
 				B5FE91FF2900DB4F00E8099A /* HomeViewController.swift in Sources */,
 				B5FE92032900DB4F00E8099A /* HomeModels.swift in Sources */,
+				B5A7F35B29F595D9004F5593 /* GenericDecoder.swift in Sources */,
 				B5D48312294E591A0079E962 /* HomeStrings.swift in Sources */,
-				B5C2E4AC29A6E249009A0EF4 /* URLRequestConvertible.swift in Sources */,
 				B5C2E4A429A6B5DB009A0EF4 /* HTTPRequestParams.swift in Sources */,
 				B5C2E4A629A6CCC4009A0EF4 /* TMDBEndpoint.swift in Sources */,
 				B5D482FE294C15940079E962 /* ImageConstants.swift in Sources */,
@@ -605,13 +940,13 @@
 				B5D4830A294D1FA60079E962 /* LocalizationProtocol.swift in Sources */,
 				B5B7C47029035F9C0044C5B4 /* LoginInteractor.swift in Sources */,
 				B5FE91FE2900DB4F00E8099A /* HomeView.swift in Sources */,
+				B5A7F37229F74781004F5593 /* DispatchQueue+Extension.swift in Sources */,
 				B5C2E4B429A86120009A0EF4 /* Color+Extension.swift in Sources */,
 				B5FE91DA2900DAEF00E8099A /* AppDelegate.swift in Sources */,
 				B5B7C47129035F9C0044C5B4 /* LoginView.swift in Sources */,
 				B5FE92052900DB4F00E8099A /* ViewCode.swift in Sources */,
 				B5FE92022900DB4F00E8099A /* HomeWorker.swift in Sources */,
 				B5B7C48F290492A00044C5B4 /* LoginModels.swift in Sources */,
-				B5C2E4AE29A7E48C009A0EF4 /* TMDBFetchResponse.swift in Sources */,
 				B5FE92152901E57400E8099A /* Date+Extension.swift in Sources */,
 				B5D48314294E598F0079E962 /* DetailStrings.swift in Sources */,
 				B5FE921E2901EBF400E8099A /* DetailWorker.swift in Sources */,
@@ -625,6 +960,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B57D564229CFC1AB00EF75D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FE91D52900DAEF00E8099A /* TMDBViewer */;
+			targetProxy = B57D564129CFC1AB00EF75D1 /* PBXContainerItemProxy */;
+		};
 		B5B7C4B5290778E70044C5B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5B7C4A7290778E50044C5B4 /* TMDBWidgetExtension */;
@@ -653,6 +993,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B57D564429CFC1AB00EF75D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GAZK96UR75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieltargon.TMDBViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDBViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDBViewer";
+			};
+			name = Debug;
+		};
+		B57D564529CFC1AB00EF75D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GAZK96UR75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieltargon.TMDBViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDBViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDBViewer";
+			};
+			name = Release;
+		};
 		B5B7C4B8290778E80044C5B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -676,7 +1054,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -703,7 +1081,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -892,6 +1270,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B57D564329CFC1AB00EF75D1 /* Build configuration list for PBXNativeTarget "TMDBViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57D564429CFC1AB00EF75D1 /* Debug */,
+				B57D564529CFC1AB00EF75D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5B7C4BA290778E80044C5B4 /* Build configuration list for PBXNativeTarget "TMDBWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

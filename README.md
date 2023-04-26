@@ -17,7 +17,8 @@ iOS Application written in Swift with TMDB API
 - UIKit (ViewCode)
 - SwiftUI (Widget)
 - TMBD API
-- Localizable (English and Portuguese)
+- Localizable (English and Brazilian Portuguese)
+- Unit Test (XCTest)
 
 ## External packages (SPM)
 - Kingfisher
@@ -26,7 +27,7 @@ iOS Application written in Swift with TMDB API
 
 - Compose
 - Better error messages
-- UnitTest
+- Snapshot and UI Tests
 
 ## Informations
 

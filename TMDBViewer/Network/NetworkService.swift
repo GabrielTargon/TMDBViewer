@@ -7,16 +7,18 @@
 
 import Foundation
 
-class NetworkService {
-    
-    let session = URLSession.shared
+protocol NetworkServiceProviderProtocol {
+    static func makeRequest<T:Codable>(_ request: HTTPRequestParams,
+                                       completion: @escaping (Result<T, NetworkError>) -> Void)
+}
+
+class NetworkService: NetworkServiceProviderProtocol {
     
     static func makeRequest<T:Codable>(_ request: HTTPRequestParams,
                                        completion: @escaping (Result<T, NetworkError>) -> Void) {
-        let session = URLSession.shared
         do {
             let request = try request.asURLRequest()
-            session.dataTask(with: request) { (data, response, error) in
+            URLSession.shared.dataTask(with: request) { (data, response, error) in
                 if let data = data, let responseData: T = NetworkService.decodeFormData(data: data) {
                     DispatchQueue.main.async {completion(.success(responseData))}
                 } else {

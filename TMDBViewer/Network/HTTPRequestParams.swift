@@ -8,9 +8,10 @@
 import Foundation
 
 enum HTTPMethod: String {
+    case get = "GET"
     case post = "POST"
     case put = "PUT"
-    case get = "GET"
+    case patch = "PATCH"
     case delete = "DELETE"
 }
 
@@ -20,7 +21,11 @@ protocol HTTPRequestParams: URLRequestConvertible {
     
     var path: String { get }
     
-    var parameters: [String: Any]? { get }
+    var parameters: [String: Any] { get }
     
     var method: HTTPMethod { get }
+}
+
+public protocol URLRequestConvertible {
+    func asURLRequest() throws -> URLRequest
 }

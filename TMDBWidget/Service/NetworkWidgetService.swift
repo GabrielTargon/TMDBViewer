@@ -11,7 +11,11 @@ import WidgetKit
 struct NetworkWidgetService {
     
     func fetchMoviesList(completion: @escaping (Timeline<SimpleEntry>) -> ()) {
-        NetworkService.makeRequest(TMDBEndpoint.movies(Home.Endpoint.nowPlaying.rawValue)) { (response: Result<MoviesResponse, NetworkError>) in
+        
+        let endpoint = TMDBEndpoint(path: "movie/now_playing",
+                                    method: .get)
+        
+        NetworkService.makeRequest(endpoint) { (response: Result<MoviesResponse, NetworkError>) in
             switch response {
             case .success(let data):
                 let entry = SimpleEntry(title: data.results[0].title,

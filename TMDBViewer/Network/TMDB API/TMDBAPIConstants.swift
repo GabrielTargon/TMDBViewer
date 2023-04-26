@@ -18,12 +18,4 @@ struct TMDBAPIConstants {
     static let HEADER_CONTENT_TYPE = "application/json"
     
     static let PARAMETER_API_KEY = "api_key"
-    
-    static let PARAMETER_USERNAME = "username"
-    
-    static let PARAMETER_PASSWORD = "password"
-    
-    static let PARAMETER_REQUEST_TOKEN = "request_token"
-    
-    static let PARAMETER_MOVIE_APPEND = "append_to_response"
 }

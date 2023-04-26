@@ -13,4 +13,5 @@ enum NetworkError: Error {
     case invalidURL
     case unknown
     case invalidResponse
+    case jsonError
 }
